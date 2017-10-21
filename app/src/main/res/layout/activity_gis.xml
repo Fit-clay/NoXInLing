@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_gis"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.beidian.beidiannonxinling.ui.activity.GisActivity">
+    <!--title-->
+    <include
+        android:id="@+id/inc_title"
+        layout="@layout/top_bar_leftback_rightbutton"/>
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+        <!--百度地图-->
+
+        <com.baidu.mapapi.map.MapView
+            android:id="@+id/bmapView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <!--图例参照表-->
+
+        <HorizontalScrollView
+
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:scrollbars="none">
+            <LinearLayout
+                android:id="@+id/ll_color_table"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <!--测试数据tab切换页-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical" android:layout_height="320dp">
+
+            <ImageView
+                android:id="@+id/img_gis_show_tab"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginBottom="5dp"
+                android:src="@mipmap/icon_show_tab"/>
+
+            <LinearLayout
+                android:id="@+id/layout_tab_info"
+                android:layout_width="match_parent"
+                android:layout_height="270dp"
+
+                android:orientation="vertical"
+            >
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_yd"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/ll_gis"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal"
+            android:padding="10dp">
+            <TextView
+                android:id="@+id/tx_yds"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:layout_toLeftOf="@+id/tx_yd"
+                android:text="移动检测:"
+                android:textSize="15dp"
+
+                />
+        <TextView
+            android:id="@+id/tx_yd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:text="移动中"
+            android:textSize="15dp"
+            android:textColor="@color/actionsheet_blue"
+            />
+
+        </LinearLayout>
+        <!--底部菜单-->
+
+        <LinearLayout android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_alignParentBottom="true"
+                      android:layout_centerHorizontal="true"
+                      android:layout_marginBottom="50dp">
+            <Button
+                android:id="@+id/bt_stop"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+
+                android:background="@drawable/icon_test_stop"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_gis"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="5dp"
+            android:background="@color/white"
+            android:orientation="vertical" android:layout_height="100dp">
+            <include
+                layout="@layout/gis_line"></include>
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="0dp"
+                          android:layout_weight="1"
+                          android:gravity="center_vertical"
+                          android:orientation="horizontal"
+                          android:visibility="gone">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="采集模式"/>
+                <Spinner
+                    android:id="@+id/spinner2"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="3.25"
+                    android:background="@drawable/shape_test_work_spinner"
+                    android:paddingLeft="5dp"
+                />
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="@color/task_page_back"
+            />
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="0dp"
+                          android:visibility="gone"
+                          android:layout_weight="1"
+                          android:gravity="center"
+                          android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="采集频率"/>
+
+                <SeekBar
+                    android:id="@+id/seekbar"
+                    android:layout_width="0dp"
+                    android:layout_weight="3.25"
+                    android:layout_height="wrap_content"
+                    android:maxHeight="8dp"
+                    android:progressDrawable="@drawable/seekbar"
+                    android:max="700"
+                    />
+                  <TextView
+                      android:id="@+id/tx_seekbar"
+                      android:layout_width="0dp"
+                      android:layout_weight="1"
+                      android:layout_height="wrap_content"
+                      android:text="300ms"/>
+            </LinearLayout>
+            <include
+                android:visibility="gone"
+                layout="@layout/gis_line"></include>
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="0dp"
+                          android:layout_weight="1"
+                          android:layout_margin="5dp"
+                          android:gravity="center"
+                          android:orientation="horizontal">
+                <Button
+                    android:id="@+id/btn_conforms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_button"
+                    android:padding="5dp"
+                    android:text="开始测试"
+                    android:textColor="@color/white"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

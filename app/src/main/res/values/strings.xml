@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources>
+    <string name="app_name">贝电非信令</string>
+    <string name="action_settings">Settings</string>
+    <!-- kai add -->
+    <string name="emi_remind_camera">(高于55时，方位角的值可能不准确，请校准！)</string>
+    <string name="connect_to_camer_error">连接相机错误</string>
+    <string name="failed_to_connect_camera">无法连接到相机</string>
+    <string name="zero_angle">0°</string>
+    <string name="try_again">重试</string>
+    <string name="cancel">取消</string>
+    <string name="record">记录</string>
+    <string name="stop_search_star">停止搜星</string>
+    <string name="kenwen">知道了</string>
+    <string name="permission_camera_reason">拍照需要授予相机权限，请到应用详情页面授予该权限。</string>
+    <string name="exit">退出</string>
+    <string name="emi_read">磁干扰指数:{0}</string>
+    <string name="locating">定位中</string>
+    <string name="udfine_name">未定义名字</string>
+    <string name="professional_edition">专业测试版</string>
+    <string name="text_inputslingname">输入信令名称</string>
+    <string name="loading">立即登录</string>
+    <string name="account">账号</string>
+    <string name="password">密码</string>
+    <string name="server_set_tip">服务器设置</string>
+    <string name="basestation_damanager_tip">基站数据库管理</string>
+    <string name="warningtone_set_tip">告警音设置</string>
+    <string name="testfile_set_tip">测试文件设置</string>
+    <string name="lockfrequency_set_tip">锁频设置</string>
+    <string name="update_check_tip">检查更新</string>
+    <string name="about_tip">关于</string>
+    <string name="usercenter_set_tip">设置中心</string>
+    <string name="ip_tip">IP地址</string>
+    <string name="ip_hint_tip">192.168.1.1</string>
+    <string name="port_tip">端口：</string>
+    <string name="port_hint_tip">8080</string>
+    <string name="downloadedlist_tip">已下载列表</string>
+    <string name="station_db_tip">基站数据库</string>
+    <string name="net_request_fail">网络请求失败，请检查网络设置</string>
+    <string name="delete">删除</string>
+    <string name="download">下载</string>
+    <string name="not_download">未下载</string>
+    <string name="downloaded">已下载</string>
+    <string name="downloading">正在下载</string>
+    <string name="download_wait">等待下载</string>
+    <string name="update">更新</string>
+    <string name="deling">正在删除...</string>
+    <string name="uziping">解压中...</string>
+    <string name="wait_download">等待下载中...</string>
+    <string name="update_readly">准备更新...</string>
+    <string name="record_testfile_tip">录制测试文件</string>
+    <string name="stop_record_testfile">停止录制测试文件</string>
+    <string name="signalname_tip">信令名称</string>
+    <string name="eventname_tip">事件名称</string>
+    <string name="time_tip">时间</string>
+    <string name="type_tip">类型</string>
+    <string name="icon_tip">图标</string>
+    <string name="test_info_tip">测试信息</string>
+    <string name="testfile_config_tip">测试文件配置</string>
+    <string name="pci_tip">PCI:</string>
+    <string name="uarfcn_tip">UARFCN:</string>
+    <string name="tac_tip">TAC:</string>
+    <string name="enb_tip">eNB:</string>
+    <string name="band_tip">BAND:</string>
+    <string name="ci_tip">CI:</string>
+    <string name="format_tip">制式:</string>
+    <string name="bandwidth_tip">BANDWidth(U/D):</string>
+    <string name="longitude_tip">经度:</string>
+    <string name="latitude_tip">纬度:</string>
+    <string name="address_tip">地址:</string>
+    <string name="hongzhan_test">宏站测试</string>
+    <string name="shifen_test">室分测试</string>
+    <string name="free_test">自由测试</string>
+    <!-- Gis呈现 -->
+    <string name="pic_manager">图例管理</string>
+    <string name="sta_filter">基站筛选</string>
+    <string name="dist_meter">距离测量</string>
+    <string name="map_mode_satellite">卫星地图</string>
+    <string name="map_mode_2d">二维地图</string>
+    <string name="cell_name_dis">小区名显示</string>
+    <string name="cell_name_hide">小区名隐藏</string>
+    <string name="area_lock">视野锁定</string>
+    <string name="sec_dis">扇区显示</string>
+    <string name="sec_hide">扇区隐藏</string>
+    <string name="loc_update">位置更新</string>
+    <string name="room_map">室内地图</string>
+    <string name="conutry_code">ENodeBID:</string>
+    <string name="station_name">基站名:</string>
+    <string name="baud_rate">频点:</string>
+    <string name="signal_level">信号强度:</string>
+    <string name="signal_quality">信号质量:</string>
+    <string name="connect_statu">连接状态:</string>
+    <string name="test_msg">测试消息:</string>
+    <string name="test_lat">纬度:</string>
+    <string name="test_lng">经度:</string>
+    <string name="connect_ip">测试内容:</string>
+    <string name="test_net_speed">测试速率:</string>
+    <string name="test_net_delay">测试时延:</string>
+    <string name="move_speed">测试速度:</string>
+    <string name="net_code">区县:</string>
+    <string name="cell_num">小区编号:</string>
+    <string name="identification_code">识别码(PCI):</string>
+    <string name="station_distance">基站距离:</string>
+    <string name="station_type">站点类型:</string>
+    <string name="distance">距离:</string>
+    <string name="station_height">站高:</string>
+    <string name="inclinometer">电倾角:</string>
+    <string name="antenna_num">天线平台数:</string>
+    <string name="main_baud">主频点:</string>
+    <string name="paging_zone">寻呼区:</string>
+    <string name="azimuth_angle">方位角:</string>
+    <string name="mechanical_tilt">机械倾角:</string>
+    <string name="is_pull_away">是否拉远:</string>
+    <string name="antenna_type">天线型号:</string>
+    <string name="antenna_platform_name">天线平台:</string>
+    <string name="best_over_area">理想最大覆盖距离:</string>
+    <string name="location_offset">方位偏置:</string>
+    <string name="predicted_level">预测强度:</string>
+    <string name="predicted_model">预测模型:</string>
+    <string name="nearest_disperse_station">最近宏站:</string>
+    <string name="nearest_small_station">最近微站:</string>
+    <string name="is_over_cell">是否越区:</string>
+    <string name="is_over_baside">是否旁瓣覆盖:</string>
+    <string name="over_stop">覆盖阻挡:</string>
+    <string name="model_third_disturb">模三干扰:</string>
+    <string name="change_block">切换阻塞:</string>
+    <string name="test_mode_tip">测试方式</string>
+    <string name="test_model_tip">测试模版</string>
+    <string name="test_item_tip">测试项</string>
+    <string name="test_sectorchoose_tip">扇区选择</string>
+    <string name="test_antenna_tip">天线</string>
+    <string name="test_type_tip">测试类型</string>
+    <string name="floor_info_tip">楼层信息</string>
+    <string name="remarks_info_tip">备注</string>
+    <string name="fugai">覆盖</string>
+    <string name="qiehuan">切换</string>
+    <string name="waixie">外泄</string>
+    <string name="model_name_tip">模版名:</string>
+    <string name="serial_number_tip">编号</string>
+    <string name="test_number_tip">测试次数</string>
+    <string name="test_num_time_tip">测试次数/时间</string>
+    <string name="test_set_name_tip">测试名称</string>
+    <string name="test_set_mode_tip">测试模式</string>
+    <string name="hold_set_time_tip">保持时间(S)</string>
+    <string name="test_time">测试时长(s)</string>
+    <string name="test_set_interval_tip">测试间隔(S)</string>
+    <string name="wait_set_time_tip">等待时间间隔(S)</string>
+    <string name="video_duration_tip">视频时长</string>
+    <string name="target_url_tip">目标URL</string>
+    <string name="coordination_mode_tip">协调方式</string>
+    <string name="call_mode_tip">呼叫方式</string>
+    <string name="called_number_tip">接收号码</string>
+    <string name="called_passive_number_tip">被叫号码</string>
+    <string name="block_time_tip">阻塞时间(S)</string>
+    <string name="thread_num_tip">线程数量</string>
+    <string name="stop_overtime_tip">停传超时(S)</string>
+    <string name="execute_overtime_tip">执行超时(S)</string>
+    <string name="server_path_tip">服务器路径</string>
+    <string name="upload_limite_tip">上传大小(M)</string>
+    <string name="speed_limite_tip">限速(Mb)</string>
+    <string name="server_address_tip">服务器地址</string>
+    <string name="account_tip">用户名</string>
+    <string name="password_tip">密码</string>
+    <string name="ftp_mode_tip">FTP模式</string>
+    <string name="port_num_tip">端口</string>
+    <string name="repeat_num">循环次数</string>
+    <string name="confirm">确定</string>
+    <string name="start_test">开始测试</string>
+    <string name="stop_test">结束测试</string>
+    <string name="signal_detail_tip">信令详情</string>
+    <string name="search_tip">搜索</string>
+    <string name="test_business">测试业务</string>
+    <string name="model_config">模版配置</string>
+    <string name="title_model_test">测试模版</string>
+    <string name="title_modeltest_detail">模版详情</string>
+    <string name="title_add_testitem">添加测试项</string>
+    <string name="back">返回</string>
+    <string name="model_name">模版名称</string>
+    <string name="model_name_empty">模版名称不能为空</string>
+    <string name="voice_call">VOICE_CALL</string>
+    <string name="attach_detach">ATTACH/DETACH</string>
+    <string name="idle">IDLE</string>
+    <string name="wait">WAIT</string>
+    <string name="ping">PING</string>
+    <string name="video">VIDEO</string>
+    <string name="http">HTTP</string>
+    <string name="cancle">取消</string>
+    <string name="toast_input_item_name">请输入测试项名称</string>
+    <string name="toast_input_item_circle_times">请输入测试次数</string>
+    <string name="toast_input_item_circle_times_min_max">请输入测试次数范围为0-10</string>
+    <string name="toast_input_item_circle_time">请输入测试时间间隔0</string>
+    <string name="toast_input_item_circle_time_min_max">请输入测试时间间隔0</string>
+    <string name="input_account">请输入登陆账号</string>
+    <string name="input_password">请输入登陆密码</string>
+    <string name="account_not_empty">用户名不能为空</string>
+    <string name="password_not_empty">密码不能为空</string>
+    <string name="logining_tip">登陆中，请稍后...</string>
+    <string name="delete_fail">删除失败</string>
+    <string name="db_update_fail">更新数据出错了</string>
+    <string name="add_success">添加成功</string>
+    <string name="add_failed">添加失败</string>
+    <string name="input_error_check">数据输入错误，请检查</string>
+    <string name="num_input_error_check">数据输入错误，必须大于0且小于</string>
+    <string name="thread_num_input_error">数据输入错误，线程数量必须大于0且小于11</string>
+    <string name="cannot_empty_tip">不能为空</string>
+    <!-- add by liuren  start -->
+    <string name="search_key_empty">搜索关键字不能为空</string>
+    <!-- add by liuren end -->
+    <string name="gis_test_info_tip">测试信息</string>
+    <string name="gis_neib_cell_tip">邻区列表</string>
+    <string name="gis_site_info_tip">基站信息</string>
+    <string name="gis_live_analyze_tip">实时分析</string>
+    <string name="gis_wireless_info_tip">无线参数</string>
+    <string name="gis_defult_value">--</string>
+    <!-- add by liuren -->
+    <!-- 邻区显示字段 -->
+    <string name="gis_neiborcell_label_cell_name">CellName</string>
+    <string name="gis_neiborcell_label_earfcn">EARFCN</string>
+    <string name="gis_neiborcell_label_pci">PCI</string>
+    <string name="gis_neiborcell_label_eci">ECI</string>
+    <string name="gis_neiborcell_label_rsrp">RSRP</string>
+    <string name="gis_neiborcell_label_rsrq">RSRQ</string>
+    <string name="gis_neiborcell_label_sinr">SINR</string>
+    <string name="gis_neiborcell_label_rssi">RSSI</string>
+    <string name="ip_not_set">请输入IP地址</string>
+    <string name="port_not_set">请输入端口号</string>
+    <string name="test_result_title">测试详情</string>
+    <!-- end -->
+    <!-- kai -->
+    <string name="model_cannot_empty">测试模版不能为空</string>
+    <string name="testitem_cannot_empty">测试项不能为空</string>
+    <string name="sector_cannot_empty">扇区不能为空</string>
+    <string name="data_empty_tip">数据为空</string>
+    <string name="searching_tip">搜索中，请稍后...</string>
+    <string name="search_box_cannot_empty">搜索框不能为空</string>
+    <string name="station_info_not_download">您的基站数据还未下载,请先下载</string>
+    <string name="gis_map_tip">Gis地图</string>
+    <string name="file_name">文件名称</string>
+    <string name="exit_shifen">退出室分</string>
+    <string name="can_not_quit_shifen_tip">已开始测试不可以退出，请点击停止测试按钮后退出</string>
+    <string name="bind_station_tip">正在绑定基站，请稍后</string>
+    <string name="unbind_station_tip">正在解绑基站，请稍后</string>
+    <string name="floor_info_cannot_empty">楼层信息不能为空</string>
+    <string name="target_url_cannot_empty">目标URL不能为空</string>
+    <string name="is_quit_shifen_page">已完成打点测试\n是否退出室分页面？</string>
+    <!-- end -->
+    <!-- 锁频设置 -->
+    <string name="net_type">网络类型</string>
+    <string name="frequency_range">频段设置</string>
+    <string name="frequency_point">频点设置</string>
+    <string name="pci_set">PCI设置</string>
+    <string name="set">设置</string>
+    <string name="unlock">解锁</string>
+    <string name="please_input_frenquency_point">请输入频点值</string>
+    <string name="unlock_net_type_success">解锁网络成功</string>
+    <string name="unlock_net_type_fail">解锁网络失败</string>
+    <string name="unlock_band_success">解锁频段成功</string>
+    <string name="unlock_band_fail">解锁频段失败</string>
+    <string name="unlock_pci_success">解锁PCI成功</string>
+    <string name="unlock_pci_fail">解锁PCI失败</string>
+    <string name="unlock_frenquency_success">解锁频点成功</string>
+    <string name="unlock_frenquency_fail">解锁频点失败</string>
+    <string name="lock_net_type_success">锁网络成功</string>
+    <string name="lock_net_type_fail">锁网络失败</string>
+    <string name="lock_band_success">锁频段成功</string>
+    <string name="lock_band_fail">锁频段失败</string>
+    <string name="lock_pci_success">锁PCI成功</string>
+    <string name="lock_pci_fail">锁PCI失败</string>
+    <string name="lock_frenquency_success">锁频点成功</string>
+    <string name="lock_frenquency_fail">锁频点失败</string>
+    <!-- 设置中心 -->
+    <string name="file_syncopate">文件自动切分</string>
+    <string name="time_interval">定时间隔</string>
+    <string name="file_create">文件自动生成</string>
+    <string name="file_clear">文件清理</string>
+    <string name="file_rule">文件命名规格</string>
+    <string name="file_format">文件格式</string>
+    <string name="file_ruleone">规则1</string>
+    <string name="file_ruletwo">规则2</string>
+    <string name="file_rulethree">规则3</string>
+    <string name="file_rulefour">规则4</string>
+    <!-- 图层管理类目-->
+    <!-- add by liuren -->
+    <string name="coverage_app_throughput_dl">APP Throughput DL Kbps</string>
+    <string name="coverage_app_throughput_ul">APP Throughput UL Kbps</string>
+    <string name="coverage_lte">LTE</string>
+    <string name="coverage_add_color">添加颜色</string>
+    <string name="coverage_changing">图层切换中...</string>
+    <string name="coverage_left_one">[</string>
+    <string name="coverage_left_zero">(</string>
+    <string name="coverage_right_one">]</string>
+    <string name="coverage_right_zero">)</string>
+    <!-- 任务列表-->
+    <!-- add by liuren -->
+    <string name="task_list_indoor_tip">室分测试</string>
+    <string name="task_list_macro_tip">宏站测试</string>
+    <string name="task_start_time_tip">开始时间：</string>
+    <string name="task_end_time_tip">结束时间：</string>
+    <string name="input_file_name_to_search">输入文件名进行搜索</string>
+    <string name="input_item_name_to_search">输入测试项名称进行搜索</string>
+    <string name="kb">&#160;KB</string>
+    <!-- 测试业务 -->
+    <string name="tach_text_trialtimes">尝试次数</string>
+    <string name="tach_text_succnumber">成功次数</string>
+    <string name="tach_text_failuretimes">失败次数</string>
+    <string name="tach_text_averagedelay">平均时延 (ms)</string>
+    <string name="block_time">阻塞时间 (S)</string>
+    <string name="already_block_time">已阻塞时间 (S)</string>
+    <string name="during_time">语音保持时长 (S)</string>
+    <string-array name="net_type_array">
+        <item>自由模式</item>
+        <item>GSM</item>
+        <item>WCDMA</item>
+        <item>TDSCDMA</item>
+    </string-array>
+    <string-array name="item_get_way">
+        <item>自动打点</item>
+        <item>手动打点</item>
+    </string-array>
+    <string name="tip_update">为了不影响您的使用,请您更新安装最新版本</string>
+    <string name="yes">是</string>
+    <string name="no">否</string>
+    <string name="locking">锁定</string>
+    <string name="oneBtUnLock">一键解锁</string>
+    <string name="frequency">频点</string>
+    <string name="automatic">自动</string>
+    <string name="onlylte">仅LTE</string>
+    <string name="process_img">图片处理中</string>
+    <!-- 测试结果 -->
+    <!-- add by liuren -->
+    <string name="uploaded">已上传</string>
+    <string name="unupload">未上传</string>
+    <string name="not_generate">未生成</string>
+    <string name="generate">已生成</string>
+    <string name="selected_all">全选</string>
+    <string name="cancel_selected_all">取消全选</string>
+    <string name="menu_delele">删除</string>
+    <string name="search_hint">请输入搜索关键字</string>
+    <string name="download_report">下载报告</string>
+    <string name="view_report">查看报告</string>
+    <string name="kpi_statistics_tip">KPI统计</string>
+    <string name="event_quota_tip">事件指标</string>
+    <string name="wireless_quota_tip">无线指标</string>
+    <string name="dispatch_quota_tip">调度指标</string>
+    <string name="rate_change_success">切换\n成功率</string>
+    <string name="rate_lte_cover">LTE\n覆盖率</string>
+    <string name="prb_count_down_average_hour">下行平均\n每时隙\n调度\nPRB个数</string>
+    <string name="rate_rrc_build_success">RRC\n建立\n成功率</string>
+    <string name="rsrp_average">平均\nRSRP</string>
+    <string name="prb_count_down_average_second">下行平均\n每秒\n调度\nPRB个数</string>
+    <string name="rate_rrc_rebuild_success">RRC\n重建\n成功率</string>
+    <string name="sinr_average">平均\nSINR</string>
+    <string name="ratio_time_singleflow">单流\n时长占比</string>
+    <string name="rate_download_dropped">下载\n掉线率</string>
+    <string name="speed_download">下载\n速率</string>
+    <string name="ratio_time_doubleflow">双流\n时长占比</string>
+    <string name="rate_upload_dropped">上传\n掉线率</string>
+    <string name="speed_upload">上传\n速率</string>
+    <string name="rate_call_success_csfb">CSFB\n全程呼叫\n成功率</string>
+    <string name="count_call">试呼\n次数</string>
+    <string name="rate_call_connect_sucess">接通率</string>
+    <string name="rate_call_connect_fail">掉话率</string>
+    <string name="rate_csfb_fall_success">CSFB\n回落\n成功率</string>
+    <string name="all_call_success">全程\n呼叫成功</string>
+    <string name="mos_average">平均MOS</string>
+    <string name="rate_ims_register_success">IMS\n注册\n成功率</string>
+    <string name="kpi_error_tip">出错了！请重试。</string>
+    <string name="kpi_request_tip">正在处理，请稍后。</string>
+    <string name="search_result">搜索结果</string>
+    <string name="finish_task">结束任务</string>
+    <!-- 结果分析 -->
+    <string name="test_result_finish_task_success">当前基站测试成功结束</string>
+    <string name="test_result_site_is_testing">当前基站有测试中的任务</string>
+    <string name="test_result_data_loading">数据加载中...</string>
+    <string name="test_result_data_load_selected_tip">请选择要上传的项</string>
+    <string name="test_result_data_load_selected_has_uploaded_tip">当前选中项包含【已上传】的项,不能再次上传,请重新勾选
+    </string>
+    <string name="test_result_upload_tip">当前选中项包含【未完成测试】的项,不能上传,请重新勾选</string>
+    <string name="test_result_statistics_selected_tip">请选择需要统计的任务。</string>
+    <string name="test_result_statistics_tip">选择的任务中包含未上传的任务，请上传后再统计。</string>
+    <string name="test_result_detele_confirm_tip">确认删除吗?</string>
+    <string name="test_result_can_not_delete_tip">当前选中项尚未测试，不能删除，请完成测试</string>
+    <string name="test_result_detele_selected_tip">当前选中项包含【测试中...】的项,不能删除,请去除勾选后再试</string>
+    <string name="test_result_delete">请选择要删除的项</string>
+    <string name="test_result_selected_same_site_tip">每次提交只能选择同一基站的任务，请重新选择。</string>
+    <string name="test_result_confirm_finish_task">确认结束任务吗?</string>
+    <string name="data_uploading">数据上传中...</string>
+    <string name="has_no_data_to_upload">没有需要上传的任务</string>
+    <string name="task_has_no_data">任务无测试数据</string>
+    <string name="file_operator_exception">文件操作异常</string>
+    <string name="has_create">已创建</string>
+    <string name="task_is_testting">测试中</string>
+    <string name="has_finish_task">完成测试</string>
+    <string name="report_is_genrate">已生成报告</string>
+    <string name="data_has_uploaded">已上传</string>
+    <string name="data_unupload">未上传</string>
+    <string name="zreo_data_length">0B</string>
+    <string name="test_result_detail_delete_tip">包含未完成数据，不可删除</string>
+    <string name="about_content">
+            智能单验是一款创新型的无线网络优化产品,支持Android手机操作系统,可进行TD-LTE,FDD-LT网络下的各种语音及数据业务测试,可配套使用后台软件对测试数据进行集中化处理,单验报告自动化,测试结果全面分析.软件支持自动业务测试:语音呼叫,FTP上传/下载,PING,HTTP等,支持室外路测和室内打点测试,测试数据以log文件记录,支持锁频段,锁频点,锁小区等功能.实现测试数据自动分析对比,避免人为错误,保证数据准确性,同时节约人力成本,便于管理.
+    </string>
+    <string name="less_ten_percent">&#60;10%</string>
+    <string name="company_version">1.1.5</string>
+    <string name="company_name">上海芮宜信息科技有限公司</string>
+
+
+    <string name="site_name_tip">基站名</string>
+    <string name="tip_name">基站:</string>
+    <string name="net_ways">网络制式:</string>
+    <string name="operator">运营商:</string>
+    <string name="basic_message_collection">基础信息采集</string>
+    <string name="village_message_collection">小区1信息采集</string>
+    <string name="new_place">新增小区</string>
+    <string name="new_antenna">新增天线</string>
+    <string name="machine_factory">设备厂商</string>
+    <string name="shang_zhan">上站难易程度</string>
+    <string name="site_address">站点地址</string>
+    <string name="tip_picture_collection">基站全景图片采集</string>
+    <string name="village_cel">小区ECI</string>
+    <string name="administrative_division">所属行政区域</string>
+    <string name="is_rru">是否为RRU小区</string>
+    <string name="cover_scene">覆盖场景</string>
+    <string name="village_corver_type">小区覆盖类型</string>
+    <string name="antenna_nums">天线数</string>
+    <string name="antenna_message_collection">天线1信息采集</string>
+    <string name="antenna_surface">天线外观</string>
+    <string name="antenna_types">天线型号</string>
+    <string name="lat_long">经纬度</string>
+    <string name="azimuth_angle_range">方位角可调整范围</string>
+    <string name="mechanical_tilt_range">机械下倾角可调整范围</string>
+    <string name="elct_tilt_range">电子下倾角可调整范围</string>
+    <string name="rf_cover_target">RF覆盖目标</string>
+    <string name="antenna_hight">天线挂高</string>
+    <string name="mechanical_tilts">机械下倾角</string>
+    <string name="azimuth_angles">方位角</string>
+    <string name="antenna_cover_picture">天线覆盖照</string>
+    <string name="test_verification">以上测试验证</string>
+    <string name="confirms">确认</string>
+    <string name="basic_name">基站基础信息</string>
+    <string name="city">地市</string>
+    <string name="county">区县</string>
+    <string name="sta_type">基站类型</string>
+    <string name="sta_name">基站名称</string>
+    <string name="planning_id">规划ID</string>
+    <string name="planning_name">规划名称</string>
+    <string name="station_situation">共站情况</string>
+    <string name="bbu_nums">BBU数量</string>
+    <string name="uul_nums">RRU数量</string>
+    <string name="fixed_test">定点测试</string>
+    <string name="plannint_value">规划值</string>
+    <string name="collection_value">采集值</string>
+    <string name="uniformity">一致性</string>
+    <string name="channel">频段</string>
+    <string name="is_layuan">是否拉远</string>
+    <string name="angles">下倾角</string>
+    <string name="test">测试</string>
+
+    <string name="company_names">公司部门</string>
+    <string name="test_mode">测试模板配置</string>
+    <string name="line_map">离线地图</string>
+    <string name="help">帮助</string>
+    <string name="feedback">反馈</string>
+
+
+    <string name="permission_camera_user_hint">test onRequestPermissionsResult: 没有此权限，无法开启这个功能，请开启权限。请打开照相机权限</string>
+    <string name="permission_camera_user_hint1">test shouldShowRequestPermissionRationale: 没有此权限，无法开启这个功能，请开启权限。请打开照相机权限</string>
+
+
+    <string name="permission_get_accounts_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_GET_ACCOUNTS</string>
+    <string name="permission_read_phone_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_READ_PHONE_STATE</string>
+    <string name="permission_call_phone_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_CALL_PHONE</string>
+    <string name="permission_camera_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_CAMERA</string>
+    <string name="permission_access_fine_location_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_ACCESS_FINE_LOCATION</string>
+    <string name="permission_access_coarse_location_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_ACCESS_COARSE_LOCATION</string>
+    <string name="permission_read_external_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_READ_EXTERNAL_STORAGE</string>
+    <string name="permission_white_external_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_WRITE_EXTERNAL_STORAGE</string>
+    <string name="permission_recode_audio_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_RECORD_AUDIO</string>
+
+    <string name="enodebid_name_tip">enodebid</string>
+    <string name="title_activity_navigation">NavigationActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <!--主界面-->
+    <string name="type"></string>
+    <string name="task_date">创建日期:</string>
+    <string name="task_id">工单编号:</string>
+    <string name="title_activity_login">Sign in</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!--cqt测试界面-->
+    <string name="base_info">业务信息</string>
+    <string name="test_info">测试信息</string>
+    <string name="cqt_test">CQT定点测试</string>
+
+    <style name="testwork_spinnerstyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">2</item>
+        <item name="android:background">@drawable/shape_test_work_spinner</item>
+    </style>
+
+    <style name="work_spinnerstyle">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">4.75</item>
+        <item name="android:background">@drawable/shape_test_work_spinner</item>
+
+    </style>
+
+    <style name="test_basicspinnerstyle">
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/shape_test_work_spinner</item>
+    </style>
+
+    <string name="dialog_loading">加载中</string>
+    <string name="site_title">站点名称：%1$s</string>
+    <string name="save">保存</string>
+    <string name="nettype">网络制式：%1$s</string>
+    <string name="operator_">运营商：%1$s</string>
+
+</resources>

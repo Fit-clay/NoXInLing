@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/rru_audit_ly"
+    >
+<View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@color/gray1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_title_number"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:text="1.BBU-0-1"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            />
+
+        <ImageView
+            android:id="@+id/iv_delete_rru"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginRight="30dp"
+            android:padding="10dp"
+            android:src="@mipmap/close_black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        >
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="规划设计位置:"
+            />
+        <EditText
+            android:id="@+id/edt_plan_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="1#3*B1"
+            android:textSize="@dimen/textSize12"
+            android:background="@color/gray1"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        >
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="实际安装位置:"
+            />
+        <EditText
+            android:id="@+id/edt_in_fact_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="1#3*B1"
+            android:textSize="@dimen/textSize12"
+            android:background="@color/gray1"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ly_address_info"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="位置照片："
+            android:gravity="center_vertical"
+            />
+        <ImageView
+            android:id="@+id/iv_address_photo"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:src="@mipmap/add_imageview"
+            android:padding="5dp"
+            android:layout_gravity="center"
+            />
+
+    </LinearLayout>
+</LinearLayout>

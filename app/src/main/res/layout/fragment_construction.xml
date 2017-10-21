@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="施工工艺审核"
+            android:layout_marginLeft="30dp"
+            android:drawableLeft="@mipmap/message_collection"
+            android:drawablePadding="10dp"
+            />
+</LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray1"/>
+    <LinearLayout
+        android:id="@+id/lv_construction"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/construction_tv"
+                android:text="验收检查项" />
+
+            <TextView
+                style="@style/construction_tv"
+                android:text="驻波比" />
+
+            <TextView
+                style="@style/construction_tv"
+                android:text="室外天线" />
+
+            <TextView
+                style="@style/construction_tv"
+                android:text="天馈系统防水" />
+
+            <TextView
+                style="@style/construction_tv"
+                android:text="是否有后备电源" />
+
+            <TextView
+                style="@style/construction_tv"
+                android:text="馈线固定可靠" />
+
+            <TextView
+                style="@style/construction_tv"
+                android:text="线缆走线整齐" />
+
+            <TextView
+                style="@style/construction_tv"
+                android:text="接头包皮无老化开裂" />
+
+            <TextView
+                style="@style/construction_tv"
+                android:text="标签完成准确" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/construction_tv"
+                android:layout_width="70dp"
+                android:text="检查结果" />
+
+            <LinearLayout
+                style="@style/construction_tv"
+                android:layout_width="55dp">
+
+                <Spinner
+                    android:id="@+id/sp_zhu_bo_bi"
+                    style="@style/sp_construction" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/construction_tv"
+                android:layout_width="55dp">
+
+                <Spinner
+                    android:id="@+id/sp_out_antenna"
+                    style="@style/sp_construction" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/construction_tv"
+                android:layout_width="55dp">
+
+                <Spinner
+                    android:id="@+id/sp_tiankui"
+                    style="@style/sp_construction" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/construction_tv"
+                android:layout_width="55dp">
+
+                <Spinner
+                    android:id="@+id/sp_battery"
+                    style="@style/sp_construction" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/construction_tv"
+                android:layout_width="55dp">
+
+                <Spinner
+                    android:id="@+id/sp_kuixian"
+                    style="@style/sp_construction" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/construction_tv"
+                android:layout_width="55dp">
+
+                <Spinner
+                    android:id="@+id/sp_xianlan"
+                    style="@style/sp_construction" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/construction_tv"
+                android:layout_width="55dp">
+
+                <Spinner
+                    android:id="@+id/sp_jietou"
+                    style="@style/sp_construction" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/construction_tv"
+                android:layout_width="55dp">
+
+                <Spinner
+                    android:id="@+id/sp_mark"
+                    style="@style/sp_construction" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/construction_tv"
+                android:text="备注" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+
+                <EditText
+                    android:id="@+id/edt_zhubobi"
+                    style="@style/edt_construction" />
+            </LinearLayout>
+         <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+
+                <EditText
+                    android:id="@+id/edt_out_antenna"
+                    style="@style/edt_construction" />
+            </LinearLayout>
+         <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+
+                <EditText
+                    android:id="@+id/edt_tiankui"
+                    style="@style/edt_construction" />
+            </LinearLayout>
+         <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+
+                <EditText
+                    android:id="@+id/edt_battery"
+                    style="@style/edt_construction" />
+            </LinearLayout>
+         <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+
+                <EditText
+                    android:id="@+id/edt_kuixian"
+                    style="@style/edt_construction" />
+            </LinearLayout>
+         <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+
+                <EditText
+                    android:id="@+id/edt_xianlan"
+                    style="@style/edt_construction" />
+            </LinearLayout>
+         <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+
+                <EditText
+                    android:id="@+id/edt_jietou"
+                    style="@style/edt_construction" />
+            </LinearLayout>
+         <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+
+                <EditText
+                    android:id="@+id/edt_mark"
+                    style="@style/edt_construction" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>

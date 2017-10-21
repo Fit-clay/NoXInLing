@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_gis"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="3dp"
+    android:background="@color/cqt_fragment_cqt_background"
+    tools:context="com.beidian.beidiannonxinling.ui.activity.GisActivity">
+
+        <ListView
+            android:id="@+id/lv_menu_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+
+</LinearLayout>

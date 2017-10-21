@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+   <include
+       layout="@layout/top_bar_leftback"/>
+
+    <LinearLayout
+        style="@style/base_info_ll">
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2" />
+        <TextView
+           style="@style/base_info_ll_cell_tx"
+            android:gravity="center_vertical"
+            android:text="超远"/>
+
+        <Spinner
+            android:id="@+id/spinner_far"
+            style="@style/net_framework_style"></Spinner>
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="0.2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="解释:站间距超过1000米为超远"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        style="@style/base_info_ll">
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2" />
+        <TextView
+            style="@style/base_info_ll_cell_tx"
+            android:gravity="center_vertical"
+            android:text="方位超重叠"/>
+
+        <Spinner
+            android:id="@+id/spinner_overlap"
+            style="@style/net_framework_style"></Spinner>
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="解释:同站小区间天线方位夹角大于30度"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        style="@style/base_info_ll">
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2" />
+        <TextView
+            style="@style/base_info_ll_cell_tx"
+            android:gravity="center_vertical"
+            android:text="超高"/>
+
+        <Spinner
+            android:id="@+id/spinner_height"
+            style="@style/net_framework_style"></Spinner>
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="解释:天线挂高是否高于50米"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        style="@style/base_info_ll">
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2" />
+        <TextView
+            style="@style/base_info_ll_cell_tx"
+            android:gravity="center_vertical"
+            android:text="超近"/>
+
+        <Spinner
+            android:id="@+id/spinner_near"
+            style="@style/net_framework_style"></Spinner>
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="解释:站间距小于100米为超近"/>
+    </LinearLayout>
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:gravity="center">
+        <Button
+            android:id="@+id/btn_net"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_button"
+            android:text="确定"/>
+    </LinearLayout>
+
+</RelativeLayout>

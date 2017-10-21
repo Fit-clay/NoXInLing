@@ -1,0 +1,1041 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/top_bar_right"
+        layout="@layout/top_bar_leftback_rightbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:id="@+id/sv_base_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/ly_base_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tip_name"
+                    android:textColor="#787878"
+                    android:textSize="@dimen/textSize13dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tx_tip_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/title_basic_color"
+
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/net_ways"
+                        android:textSize="@dimen/textSize13dp" />
+
+                    <TextView
+                        android:id="@+id/tx_net_ways"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/textSize13dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/operator"
+                        android:textSize="@dimen/textSize13dp" />
+
+                    <TextView
+                        android:id="@+id/tx_operator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/textSize13dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/basic_message_collection_background"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:paddingTop="3dp"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/message_collection" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="21dp"
+                        android:text="@string/basic_message_collection"
+                        android:textSize="@dimen/textSize13dp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/basic_message_img_gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="15dp"
+                    android:src="@mipmap/going"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_basic_message_collection_gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout style="@style/base_info_ll">
+
+                    <LinearLayout style="@style/base_info_ll_children">
+
+                        <TextView
+                            style="@style/base_info_ll_children_tx"
+                            android:layout_marginLeft="10dp"
+                            android:text="@string/city" />
+
+                        <EditText
+                            android:id="@+id/ed_city"
+                            style="@style/base_info_ll_children_et" />
+
+                        <android.support.v4.widget.Space
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5" />
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/base_info_ll_children">
+
+                        <TextView
+                            style="@style/base_info_ll_children_tx"
+                            android:text="@string/county" />
+
+                        <EditText
+                            android:id="@+id/et_county"
+                            style="@style/base_info_ll_children_et" />
+
+                        <android.support.v4.widget.Space
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout style="@style/base_info_ll">
+
+                    <LinearLayout style="@style/base_info_ll_children">
+
+                        <TextView
+                            style="@style/base_info_ll_children_tx"
+                            android:layout_marginLeft="10dp"
+                            android:text="@string/sta_type" />
+
+                        <EditText
+                            android:id="@+id/et_station_type"
+                            style="@style/base_info_ll_children_et" />
+
+                        <android.support.v4.widget.Space
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5" />
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/base_info_ll_children">
+
+                        <TextView
+                            style="@style/base_info_ll_children_tx"
+                            android:text="eNodeBID" />
+
+                        <EditText
+                            android:id="@+id/et_enodebid"
+                            style="@style/base_info_ll_children_et" />
+
+                        <android.support.v4.widget.Space
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout style="@style/base_info_ll">
+
+                    <LinearLayout style="@style/base_info_ll_children">
+
+                        <TextView
+                            style="@style/base_info_ll_children_tx"
+                            android:layout_marginLeft="10dp"
+                            android:text="@string/sta_name" />
+
+                        <EditText
+                            android:id="@+id/et_station_name"
+                            style="@style/base_info_ll_children_et" />
+
+                        <android.support.v4.widget.Space
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5" />
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/base_info_ll_children">
+
+                        <TextView
+                            style="@style/base_info_ll_children_tx"
+                            android:text="@string/planning_id" />
+
+                        <EditText
+                            android:id="@+id/et_planning_id"
+                            style="@style/base_info_ll_children_et" />
+
+                        <android.support.v4.widget.Space
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout style="@style/base_info_ll">
+
+                    <LinearLayout style="@style/base_info_ll_children">
+
+                        <TextView
+                            style="@style/base_info_ll_children_tx"
+                            android:layout_marginLeft="10dp"
+                            android:text="@string/planning_name" />
+
+                        <EditText
+                            android:id="@+id/et_planning_name"
+                            style="@style/base_info_ll_children_et" />
+
+                        <android.support.v4.widget.Space
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5" />
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/base_info_ll_children">
+
+                        <TextView
+                            style="@style/base_info_ll_children_tx"
+                            android:text="@string/station_situation" />
+
+                        <EditText
+                            android:id="@+id/et_station_situation"
+                            style="@style/base_info_ll_children_et" />
+
+                        <android.support.v4.widget.Space
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout style="@style/base_info_ll">
+
+                    <LinearLayout style="@style/base_info_ll_children">
+
+                        <TextView
+                            style="@style/base_info_ll_children_tx"
+                            android:layout_marginLeft="10dp"
+                            android:text="@string/test_lng" />
+
+                        <EditText
+                            android:id="@+id/et_test_lng"
+                            style="@style/base_info_ll_children_et" />
+
+                        <android.support.v4.widget.Space
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5" />
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/base_info_ll_children">
+
+                        <TextView
+                            style="@style/base_info_ll_children_tx"
+                            android:text="@string/test_lat" />
+
+                        <EditText
+                            android:id="@+id/et_test_lat"
+                            style="@style/base_info_ll_children_et" />
+
+                        <android.support.v4.widget.Space
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout style="@style/base_info_ll">
+
+                    <LinearLayout style="@style/base_info_ll_children">
+
+                        <TextView
+                            style="@style/base_info_ll_children_tx"
+                            android:layout_marginLeft="10dp"
+                            android:text="@string/bbu_nums" />
+
+                        <EditText
+                            android:id="@+id/et_bbu_nums"
+                            style="@style/base_info_ll_children_et" />
+
+                        <android.support.v4.widget.Space
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/base_info_ll_children"
+                        android:layout_width="0dp">
+
+                        <TextView
+                            style="@style/base_info_ll_children_tx"
+                            android:text="@string/uul_nums" />
+
+                        <EditText
+                            android:id="@+id/et_uul_nums"
+                            style="@style/base_info_ll_children_et" />
+
+                        <android.support.v4.widget.Space
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout style="@style/base_info_ll">
+
+                    <LinearLayout style="@style/base_info_ll_children">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:text="@string/site_address"
+                            android:textSize="@dimen/textSize13dp" />
+
+                        <EditText
+                            android:id="@+id/et_site_address"
+                            style="@style/edt_style"
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:layout_weight="7"
+                            android:background="@color/text_color_basic"
+                            android:paddingLeft="10dp" />
+
+                        <android.support.v4.widget.Space
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!--基础测试全景图片采集-->
+                <LinearLayout
+                    android:id="@+id/ly_base_photo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/tip_picture_collection"
+                        android:textSize="@dimen/textSize13dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="8.5"
+                            android:background="@color/basic_message_collection_background"
+                            android:gravity="center_vertical">
+
+                            <LinearLayout
+                                android:id="@+id/ll_take_picture"
+                                android:layout_width="wrap_content"
+                                android:layout_height="50dp"
+                                android:background="@color/basic_message_collection_background"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"></LinearLayout>
+
+                            <ImageView
+                                android:id="@+id/base_station_take_picture"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:scaleType="fitCenter"
+                                android:src="@mipmap/add_imageview" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+                <!--宏站基础测试全景图片采集-->
+                <LinearLayout
+                    android:id="@+id/ly_hongzhan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/basic_message_collection_background"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="建筑物全景照片" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="8.5"
+                            android:background="@color/basic_message_collection_background"
+                            android:gravity="center_vertical">
+
+                            <LinearLayout
+                                android:id="@+id/ly_panoramic"
+                                android:layout_width="wrap_content"
+                                android:layout_height="50dp"
+                                android:layout_marginLeft="15dp"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+                            </LinearLayout>
+
+                            <ImageView
+                                android:id="@+id/iv_hongzhan_station_take_picture"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="10dp"
+                                android:scaleType="fitCenter"
+                                android:src="@mipmap/add_imageview" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/white" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="天线整体照片" />
+
+                        <LinearLayout
+                            android:id="@+id/ly_antenna"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="15dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"></LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/iv_hongzhan_antenna_picture"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:scaleType="fitCenter"
+                            android:src="@mipmap/add_imageview" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_add_anne"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/basic_message_collection_background"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:src="@mipmap/device_information" />
+
+                        <TextView
+                            android:id="@+id/tx_get_village_message"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="16dp"
+                            android:gravity="center"
+                            android:text="@string/village_message_collection"
+                            android:textSize="@dimen/textSize13dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/add_antenna_txs"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:background="@drawable/text_shape"
+                            android:gravity="center"
+                            android:text="@string/fixed_test"
+                            android:textColor="@color/click_blue"
+                            android:textSize="12dp" />
+
+                        <android.support.v4.widget.Space
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            android:id="@+id/add_antenna_tx"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:background="@drawable/text_shape"
+                            android:gravity="center"
+                            android:text="@string/new_antenna"
+                            android:textColor="@color/click_blue"
+                            android:textSize="12dp" />
+                        />
+
+                        <ImageView
+                            android:id="@+id/village_message_img_gone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="18dp"
+                            android:src="@mipmap/going"
+                            android:visibility="invisible" />
+
+                        <android.support.v4.widget.Space
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Space
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                        <Space
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.2" />
+
+                        <TextView
+                            style="@style/base_info_ll_cell_tx"
+                            android:text="@string/plannint_value" />
+
+                        <Space
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.2" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/collection_value"
+                            android:textSize="@dimen/textSize13dp" />
+
+                        <Space
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.2" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/uniformity"
+                            android:textSize="@dimen/textSize13dp" />
+
+                        <Space
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.2" />
+
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/base_info_ll">
+
+                        <TextView
+                            style="@style/base_info_ll_cell_tx"
+                            android:text="@string/village_cel"
+                            android:textSize="@dimen/textSize13dp" />
+
+                        <Space
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.2" />
+
+                        <EditText
+                            android:id="@+id/et_village_cel_plannint_value"
+                            style="@style/base_info_ll_cell_et"
+
+                            android:background="@color/text_color_basic" />
+
+                        <Space
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.2" />
+
+                        <EditText
+                            android:id="@+id/et_village_cel_cellection_value"
+                            style="@style/base_info_ll_cell_et"
+                            android:background="@color/text_color_basic"
+                            android:enabled="true" />
+
+                        <Space
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.2" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/tv_collection_eci"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/text_shape"
+                                android:padding="5dp"
+                                android:text="采集"
+                                android:textSize="@dimen/textSize12" />
+
+                            <Spinner
+                                android:id="@+id/sp_cel"
+                                android:layout_width="50dp"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/shape_test_work_spinner"
+                                android:minHeight="20dp"
+                                android:visibility="gone"></Spinner>
+
+                            <TextView
+                                android:id="@+id/tv_base_district_consistency"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:minHeight="20dp"
+                                android:padding="5dp"
+                                android:text="是"
+                                android:textSize="@dimen/textSize12" />
+                        </LinearLayout>
+
+                        <Space
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.2" />
+
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/base_info_ll">
+
+                        <TextView
+                            style="@style/base_info_ll_cell_tx"
+                            android:text="@string/channel" />
+
+                        <Space
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.2" />
+
+                        <EditText
+                            android:id="@+id/et_channel_cel_plannint_value"
+                            style="@style/base_info_ll_cell_et"
+
+                            />
+
+                        <Space
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.2" />
+
+                        <EditText
+                            android:id="@+id/et_channel_cel_cellection_value"
+                            style="@style/base_info_ll_cell_et"
+                            android:enabled="true" />
+
+                        <Space
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.2" />
+
+                        <Spinner
+                            android:id="@+id/sp_channel"
+                            style="@style/test_basicspinnerstyle"></Spinner>
+
+                        <Space
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.2" />
+
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/base_info_ll">
+
+                        <TextView
+                            style="@style/base_info_ll_cell_tx"
+                            android:text="@string/uul_nums" />
+
+                        <Space
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.2" />
+
+                        <EditText
+                            android:id="@+id/et_rru_cel_plannint_value"
+                            style="@style/base_info_ll_cell_et" />
+
+                        <Space
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.2" />
+
+                        <EditText
+                            android:id="@+id/et_rru_cel_cellection_value"
+                            style="@style/base_info_ll_cell_et"
+                            android:enabled="true" />
+
+                        <Space
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.2" />
+
+                        <Spinner
+                            android:id="@+id/shan_rru"
+                            style="@style/test_basicspinnerstyle"></Spinner>
+
+                        <Space
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.2" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/gray1" />
+
+                    <LinearLayout style="@style/base_info_ll">
+
+                        <TextView
+                            style="@style/base_info_ll_cell_tx"
+                            android:text="PCI" />
+
+                        <Space
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.2" />
+
+                        <EditText
+                            android:id="@+id/et_pcl_plannint_value"
+                            style="@style/base_info_ll_cell_et" />
+
+                        <Space
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.2" />
+
+                        <TextView
+                            style="@style/base_info_ll_cell_tx"
+                            android:text="EARFCN" />
+
+                        <Space
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.2" />
+
+                        <EditText
+                            android:id="@+id/et_earfcn_plannint_value"
+                            style="@style/base_info_ll_cell_et" />
+
+                        <Space
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.2" />
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/base_info_ll">
+
+                        <TextView
+                            style="@style/base_info_ll_cell_tx"
+                            android:text="@string/cover_scene" />
+
+                        <Space
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.2" />
+
+                        <EditText
+                            android:id="@+id/et_cover_scene"
+                            style="@style/base_info_ll_cell_et" />
+
+                        <Space
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.2" />
+
+                        <TextView
+                            style="@style/base_info_ll_cell_tx"
+                            android:text="@string/is_layuan" />
+
+                        <Space
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.2" />
+
+                        <Spinner
+                            android:id="@+id/sp_la_yuan"
+                            style="@style/test_basicspinnerstyle"></Spinner>
+
+                        <Space
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.2" />
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/base_info_ll">
+
+                        <TextView
+                            style="@style/base_info_ll_cell_tx"
+                            android:text="@string/antenna_nums" />
+
+                        <Space
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.2" />
+
+                        <EditText
+                            android:id="@+id/et_antenna_nums"
+                            style="@style/base_info_ll_cell_et" />
+
+                        <Space
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.2" />
+
+                        <TextView
+                            style="@style/base_info_ll_cell_tx"
+                            android:text="@string/village_corver_type" />
+
+                        <Space
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.2" />
+
+                        <Spinner
+                            android:id="@+id/sp_village_corver_type"
+                            style="@style/test_basicspinnerstyle"></Spinner>
+
+                        <Space
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.2" />
+                    </LinearLayout>
+                    <!--宏站基础扇区覆盖照片-->
+                    <LinearLayout
+                        android:id="@+id/ly_cover_photo"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/basic_message_collection_background"
+                        android:orientation="horizontal"
+
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="扇区覆盖照片" />
+
+                        <LinearLayout
+                            android:id="@+id/ly_cover"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"></LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/iv_hongzhan_cover_picture"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:scaleType="fitCenter"
+                            android:src="@mipmap/add_imageview" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <com.beidian.beidiannonxinling.ui.widget.CustomListView
+                    android:id="@+id/lv_antenna"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"></com.beidian.beidiannonxinling.ui.widget.CustomListView>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.beidian.beidiannonxinling.ui.widget.customview.CustonRecycleView
+                        android:id="@+id/rv_base_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"></com.beidian.beidiannonxinling.ui.widget.customview.CustonRecycleView>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3.75"
+                        android:gravity="center"
+                        android:text="@string/test_verification"
+                        android:textSize="@dimen/textSize13dp" />
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4.75"
+                        android:background="@color/basic_message_collection_background"
+                        android:visibility="gone" />
+
+                    <Spinner
+                        android:id="@+id/sp_result"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"></Spinner>
+
+                    <android.support.v4.widget.Space
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_save"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/shape_button"
+                    android:text="@string/confirms" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

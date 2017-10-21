@@ -1,0 +1,744 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/shifen_base_sv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal"
+                android:paddingLeft="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:drawableLeft="@mipmap/message_collection"
+                    android:drawablePadding="10dp"
+                    android:gravity="center"
+                    android:text="基础信息采集"
+                    android:textSize="@dimen/textSize14" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/shifen_base_info_ly">
+
+                <TextView
+                    style="@style/shifen_base_info_tv"
+                    android:text="城市" />
+
+                <EditText
+                    android:id="@+id/edt_city"
+                    style="@style/base_info_ll_cell_et"
+                     />
+
+                <TextView
+                    style="@style/shifen_base_info_tv"
+                    android:text="区县" />
+
+                <EditText
+                    android:id="@+id/edt_county"
+                    style="@style/base_info_ll_cell_et" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/shifen_base_info_ly">
+
+                <TextView
+                    style="@style/shifen_base_info_tv"
+                    android:text="基站类型" />
+
+                <EditText
+                    android:id="@+id/edt_site_type"
+                    style="@style/base_info_ll_cell_et"
+                   />
+
+                <TextView
+                    style="@style/shifen_base_info_tv"
+                    android:text="eNodeBID" />
+
+                <EditText
+                    android:id="@+id/edt_enodebid"
+                    style="@style/base_info_ll_cell_et"
+                     />
+            </LinearLayout>
+
+            <LinearLayout style="@style/shifen_base_info_ly">
+
+                <TextView
+                    style="@style/shifen_base_info_tv"
+                    android:text="基站名称" />
+
+                <EditText
+                    android:id="@+id/edt_site_name"
+                    style="@style/base_info_ll_cell_et"
+                    />
+
+                <TextView
+                    style="@style/shifen_base_info_tv"
+                    android:text="规划ID" />
+
+                <EditText
+                    android:id="@+id/edt_plan_id"
+                    style="@style/base_info_ll_cell_et"
+                    />
+            </LinearLayout>
+
+            <LinearLayout style="@style/shifen_base_info_ly">
+
+                <TextView
+                    style="@style/shifen_base_info_tv"
+                    android:text="规划名称" />
+
+                <EditText
+                    android:id="@+id/edt_plan_name"
+                    style="@style/base_info_ll_cell_et"
+                  />
+
+                <TextView
+                    style="@style/shifen_base_info_tv"
+                    android:text="共站情况" />
+
+                <EditText
+                    android:id="@+id/edt_same_situation"
+                    style="@style/base_info_ll_cell_et"
+                    />
+            </LinearLayout>
+
+            <LinearLayout style="@style/shifen_base_info_ly">
+
+                <TextView
+                    style="@style/shifen_base_info_tv"
+                    android:text="经度" />
+
+                <EditText
+                    android:id="@+id/edt_lat"
+                    style="@style/base_info_ll_cell_et"
+                    />
+
+                <TextView
+                    style="@style/shifen_base_info_tv"
+                    android:text="纬度" />
+
+                <EditText
+                    android:id="@+id/edt_lng"
+                    style="@style/base_info_ll_cell_et"
+                    />
+            </LinearLayout>
+
+            <LinearLayout style="@style/shifen_base_info_ly">
+
+                <TextView
+                    style="@style/shifen_base_info_tv"
+                    android:text="BBU数量" />
+
+                <EditText
+                    android:id="@+id/edt_bbu_number"
+                    style="@style/base_info_ll_cell_et"
+                    />
+
+                <TextView
+                    style="@style/shifen_base_info_tv"
+                    android:text="RRU数量" />
+
+                <EditText
+                    android:id="@+id/edt_rru_number"
+                    style="@style/base_info_ll_cell_et"
+                   />
+            </LinearLayout>
+
+            <LinearLayout style="@style/shifen_base_info_ly">
+
+                <TextView
+                    style="@style/shifen_base_info_tv"
+                    android:text="站点地址" />
+
+                <EditText
+                    android:id="@+id/edt_site_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/gray1"
+                    android:hint="根据经纬度自动获取"
+                    android:textSize="@dimen/textSize12"
+                    android:enabled="false"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:padding="5dp">
+
+                <TextView
+                    style="@style/shifen_base_info_tv"
+                    android:layout_marginLeft="30dp"
+                    android:text="建筑物全景正面" />
+
+                <ImageView
+                    android:id="@+id/iv_build_z"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:src="@mipmap/add_imageview" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:padding="5dp">
+
+                <TextView
+                    style="@style/shifen_base_info_tv"
+                    android:layout_marginLeft="30dp"
+                    android:text="建筑物全景侧面" />
+
+                <ImageView
+                    android:id="@+id/iv_build_c"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:src="@mipmap/add_imageview" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/shifen_base_info_ly"
+                android:background="@color/gray1"
+
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30dp"
+                    android:layout_weight="1"
+                    android:gravity="left|center_vertical"
+                    android:text="BBU安装位置核查" />
+
+                <ImageView
+                    android:id="@+id/iv_add_bbu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="30dp"
+                    android:src="@mipmap/add_black" />
+            </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/tv_item_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:text="BBU规划设计位置信息" />
+
+
+            <EditText
+                android:id="@+id/edt_bbu_address_info"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/gray1" />
+
+
+            <com.beidian.beidiannonxinling.ui.widget.customview.CustonRecycleView
+                android:id="@+id/rv_bbu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></com.beidian.beidiannonxinling.ui.widget.customview.CustonRecycleView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal"
+                android:paddingLeft="15dp">
+
+                <TextView
+                    android:id="@+id/tv_distract_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawableLeft="@mipmap/device_information"
+                    android:drawablePadding="5dp"
+                    android:gravity="center_vertical|left"
+                    android:text="小区信息采集"
+                    android:textSize="@dimen/textSize14" />
+
+  <!--              <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:gravity="right"
+                    android:text="其他测试" />-->
+
+                <TextView
+                    android:id="@+id/tv_other_test"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/text_shape"
+                    android:gravity="center"
+                    android:text="其他测试"
+                    android:textColor="@color/click_blue"
+                    android:textSize="12dp"
+                    android:layout_marginRight="15dp"
+                    android:padding="3dp"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2" />
+
+                    <TextView
+                        style="@style/base_info_ll_cell_tx"
+                        android:text="@string/plannint_value" />
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/collection_value"
+                        android:textSize="@dimen/textSize13dp" />
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/uniformity"
+                        android:textSize="@dimen/textSize13dp" />
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2" />
+
+                </LinearLayout>
+
+                <LinearLayout style="@style/base_info_ll">
+
+                    <TextView
+                        style="@style/base_info_ll_cell_tx"
+                        android:text="@string/village_cel"
+                        android:textSize="@dimen/textSize13dp" />
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2" />
+
+                    <EditText
+                        android:id="@+id/et_village_cel_plannint_value"
+                        style="@style/base_info_ll_cell_et"
+
+                        android:background="@color/text_color_basic" />
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2" />
+
+                    <EditText
+                        android:id="@+id/et_village_cel_cellection_value"
+                        style="@style/base_info_ll_cell_et"
+                        android:background="@color/text_color_basic"
+                        android:enabled="true" />
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/tv_collection_eci"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/text_shape"
+                            android:padding="5dp"
+                            android:text="采集"
+                            android:textSize="@dimen/textSize12" />
+
+                        <Spinner
+                            android:id="@+id/sp_cel"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/shape_test_work_spinner"
+                            android:minHeight="20dp"
+                            android:visibility="gone"></Spinner>
+
+                        <TextView
+                            android:id="@+id/tv_base_district_consistency"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:minHeight="20dp"
+                            android:padding="5dp"
+                            android:text="是"
+                            android:textSize="@dimen/textSize12" />
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2" />
+
+                </LinearLayout>
+
+                <LinearLayout style="@style/base_info_ll">
+
+                    <TextView
+                        style="@style/base_info_ll_cell_tx"
+                        android:text="@string/channel" />
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2" />
+
+                    <EditText
+                        android:id="@+id/et_channel_cel_plannint_value"
+                        style="@style/base_info_ll_cell_et"
+
+                        />
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2" />
+
+                    <EditText
+                        android:id="@+id/et_channel_cel_cellection_value"
+                        style="@style/base_info_ll_cell_et"
+                        android:enabled="true" />
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2" />
+
+                    <Spinner
+                        android:id="@+id/sp_band"
+                        style="@style/test_basicspinnerstyle"></Spinner>
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2" />
+
+                </LinearLayout>
+
+                <LinearLayout style="@style/base_info_ll">
+
+                    <TextView
+                        style="@style/base_info_ll_cell_tx"
+                        android:text="@string/uul_nums" />
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2" />
+
+                    <EditText
+                        android:id="@+id/et_rru_cel_plannint_value"
+                        style="@style/base_info_ll_cell_et" />
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2" />
+
+                    <EditText
+                        android:id="@+id/et_rru_cel_cellection_value"
+                        style="@style/base_info_ll_cell_et"
+                        android:enabled="true" />
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2" />
+
+                    <Spinner
+                        android:id="@+id/sp_is_rru"
+                        style="@style/test_basicspinnerstyle"></Spinner>
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/gray1" />
+
+                <LinearLayout style="@style/base_info_ll">
+
+                    <TextView
+                        style="@style/base_info_ll_cell_tx"
+                        android:text="PCI" />
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2" />
+
+                    <EditText
+                        android:id="@+id/et_pcl_plannint_value"
+                        style="@style/base_info_ll_cell_et" />
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2" />
+
+                    <TextView
+                        style="@style/base_info_ll_cell_tx"
+                        android:text="EARFCN" />
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2" />
+
+                    <EditText
+                        android:id="@+id/et_earfcn_plannint_value"
+                        style="@style/base_info_ll_cell_et" />
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/base_info_ll">
+
+                    <TextView
+                        style="@style/base_info_ll_cell_tx"
+                        android:text="@string/cover_scene" />
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2" />
+
+                    <EditText
+                        android:id="@+id/et_cover_scene"
+                        style="@style/base_info_ll_cell_et" />
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2" />
+
+                    <TextView
+                        style="@style/base_info_ll_cell_tx"
+                        android:text="@string/is_layuan" />
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2" />
+
+                    <Spinner
+                        android:id="@+id/sp_la_yuan"
+                        style="@style/test_basicspinnerstyle"></Spinner>
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/base_info_ll">
+
+                    <TextView
+                        style="@style/base_info_ll_cell_tx"
+                        android:text="@string/antenna_nums" />
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2" />
+
+                    <EditText
+                        android:id="@+id/et_antenna_nums"
+                        style="@style/base_info_ll_cell_et" />
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2" />
+
+                    <TextView
+                        style="@style/base_info_ll_cell_tx"
+                        android:text="@string/village_corver_type" />
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2" />
+
+                    <Spinner
+                        android:id="@+id/sp_village_corver_type"
+                        style="@style/test_basicspinnerstyle"></Spinner>
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/shifen_base_info_ly"
+                android:background="@color/gray1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30dp"
+                    android:layout_weight="1"
+                    android:gravity="left|center_vertical"
+                    android:text="RRU安装位置核查" />
+
+                <ImageView
+                    android:id="@+id/iv_add_rru"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="30dp"
+                    android:src="@mipmap/add_black" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:text="RRU规划设计位置信息" />
+
+
+            <EditText
+                android:id="@+id/edt_rru_address_info"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/gray1" />
+
+
+            <com.beidian.beidiannonxinling.ui.widget.customview.CustonRecycleView
+                android:id="@+id/rv_rru"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></com.beidian.beidiannonxinling.ui.widget.customview.CustonRecycleView>
+            <LinearLayout
+                style="@style/shifen_base_info_ly"
+                android:background="@color/gray1"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30dp"
+                    android:layout_weight="1"
+                    android:gravity="left|center_vertical"
+                    android:text="天线照片采集" />
+
+                <ImageView
+                    android:id="@+id/iv_add_antenna"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="30dp"
+                    android:src="@mipmap/ic_launcher" />
+            </LinearLayout>
+
+            <com.beidian.beidiannonxinling.ui.widget.CustomListView
+                android:id="@+id/lv_antenna"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@color/white"
+                ></com.beidian.beidiannonxinling.ui.widget.CustomListView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/test_verification"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/textSize13dp" />
+
+                <Spinner
+                    android:id="@+id/sp_result"
+                    style="@style/test_basicspinnerstyle"
+                    ></Spinner>
+
+                <android.support.v4.widget.Space
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

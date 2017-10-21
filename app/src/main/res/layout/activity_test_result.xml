@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/top_bar_leftback" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sv_test_result"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/test_result_linear">
+
+                <TextView
+                    style="@style/test_result_text"
+                    android:text="扇区选择" />
+
+                <Spinner
+                    android:id="@+id/sp_sector"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/textSize10"
+                    android:layout_marginRight="@dimen/textSize30"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_test_work_spinner"
+                    android:paddingRight="5dp"></Spinner>
+            </LinearLayout>
+
+            <LinearLayout style="@style/test_result_linear">
+
+                <TextView
+                    style="@style/test_result_text"
+                    android:text="经纬度" />
+
+
+                <EditText
+                    android:id="@+id/edt_test_result_lat"
+                    style="@style/edt_style_width100_enabled_no" />
+
+                <EditText
+                    android:id="@+id/edt_test_result_lng"
+                    style="@style/edt_style_width100_enabled_no" />
+
+                <ImageView
+                    android:id="@+id/iv_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:src="@mipmap/location" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/test_result_linear">
+
+            <TextView
+                android:id="@+id/tv_address"
+                style="@style/test_result_text"
+                android:text="地址" />
+
+            <EditText
+                android:id="@+id/edt_test_result_address"
+                style="@style/edt_style_base"
+
+                />
+        </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ly_shifen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout style="@style/test_result_linear">
+                    <TextView
+                        style="@style/test_result_text"
+                        android:text="单元信息" />
+                    <Spinner
+                        android:id="@+id/sp_model_info"
+                        style="@style/cqt_test_spinner"></Spinner>
+                </LinearLayout>
+                <LinearLayout style="@style/test_result_linear">
+
+                <TextView
+                    style="@style/test_result_text"
+                    android:text="楼层信息" />
+
+                    <Spinner
+                        android:id="@+id/sp_floor"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/shape_test_work_spinner"
+                        ></Spinner>
+                    <TextView
+                        style="@style/test_result_text"
+                        android:text="参考高度" />
+
+                    <EditText
+                        android:id="@+id/edit_height"
+                        style="@style/edt_style_width100_enabled_no"
+                        android:enabled="true"
+                        />
+                </LinearLayout>
+                <LinearLayout style="@style/test_result_linear">
+
+                <TextView
+                    style="@style/test_result_text"
+                    android:text="楼层位置" />
+
+                <EditText
+                    android:id="@+id/edt_floor_address"
+                    style="@style/edt_style_base"
+                    android:enabled="true"
+
+                    />
+            </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/test_result_linear">
+
+                <TextView
+                    style="@style/test_result_text"
+                    android:text="测试模板" />
+
+                <EditText
+                    android:id="@+id/edt_test_model"
+                    style="@style/edt_style_base"
+                    android:visibility="gone"
+                    ></EditText>
+                <Spinner
+                    android:id="@+id/sp_test_model"
+                    style="@style/cqt_test_spinner"></Spinner>
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/test_result_linear">
+
+                <TextView
+                    style="@style/test_result_text"
+                    android:text="测试项" />
+
+                <!--<Spinner-->
+                <!--android:id="@+id/sp_test_change"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_marginLeft="@dimen/textSize10"-->
+                <!--android:layout_marginRight="@dimen/textSize30"-->
+                <!--android:layout_weight="1"-->
+                <!--android:background="@drawable/shape_test_work_spinner"></Spinner>-->
+                <com.beidian.beidiannonxinling.ui.widget.MultiSpinner
+                    android:id="@+id/sp_test_change"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/textSize10"
+                    android:layout_marginRight="@dimen/textSize30"
+                    android:layout_weight="1"
+                    android:hint="请选择测试项"
+                    android:gravity="center"
+                    android:background="@color/gray1"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ly_rru"
+                style="@style/test_result_linear">
+
+                <TextView
+                    style="@style/test_result_text"
+                    android:text="RRU" />
+
+                <EditText
+                    android:id="@+id/edt_rru"
+                    style="@style/edt_style_base"
+                    android:enabled="true"
+                    android:visibility="gone"
+                    ></EditText>
+
+                <Spinner
+                    android:id="@+id/sp_rru"
+                    style="@style/cqt_test_spinner"></Spinner>
+
+            </LinearLayout>
+            <LinearLayout style="@style/test_result_linear">
+
+                <TextView
+                    style="@style/test_result_text"
+                    android:text="备注" />
+
+                <EditText
+                    android:id="@+id/edt_remarks"
+                    style="@style/edt_style_base"
+                    android:enabled="true"
+                    ></EditText>
+            </LinearLayout>
+
+            <LinearLayout style="@style/test_result_linear">
+
+                <TextView
+                    style="@style/test_result_text"
+                    android:text="RSRP" />
+
+                <EditText
+                    android:id="@+id/edt_rsrp"
+                    style="@style/edt_style_width100_enabled_no" ></EditText>
+
+                <TextView
+                    style="@style/test_result_text"
+                    android:text="SINR" />
+
+                <EditText
+                    android:id="@+id/edt_sinr"
+                    style="@style/edt_style_width100_enabled_no"></EditText>
+            </LinearLayout>
+
+            <LinearLayout style="@style/test_result_linear">
+
+                <TextView
+                    style="@style/test_result_text"
+                    android:text="PING延时" />
+
+                <EditText
+                    android:id="@+id/edt_ping"
+                    style="@style/edt_style_width100_enabled_no"></EditText>
+
+                <TextView
+                    style="@style/test_result_text"
+                    android:text="HTTP速率" />
+
+                <EditText
+                    android:id="@+id/edt_http"
+                    style="@style/edt_style_width100_enabled_no"></EditText>
+            </LinearLayout>
+
+            <LinearLayout style="@style/test_result_linear">
+
+                <TextView
+                    style="@style/test_result_text"
+                    android:text="FTP下载" />
+
+                <EditText
+                    android:id="@+id/edt_ftp_down"
+                    style="@style/edt_style_width100_enabled_no"></EditText>
+
+                <TextView
+                    style="@style/test_result_text"
+                    android:text="FTP上传" />
+
+                <EditText
+                    android:id="@+id/edt_ftp_up"
+                    style="@style/edt_style_width100_enabled_no"></EditText>
+            </LinearLayout>
+
+            <LinearLayout style="@style/test_result_linear">
+
+                <TextView
+                    style="@style/test_result_text"
+                    android:text="VOLTE接通率" />
+
+                <EditText
+                    android:id="@+id/edt_volte"
+                    style="@style/edt_style_width100_enabled_no"></EditText>
+
+                <TextView
+                    style="@style/test_result_text"
+                    android:text="CSFB接通率" />
+
+                <EditText
+                    android:id="@+id/edt_csfb"
+                    style="@style/edt_style_width100_enabled_no"></EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/test_result_linear"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/test_result_text"
+                    android:text="视频通话接通率"
+
+                    />
+
+                <EditText
+                    android:id="@+id/edt_call"
+                    style="@style/edt_style_width100_enabled_no" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/test_result_linear"
+                android:gravity="center"
+                >
+
+                <TextView
+                    android:id="@+id/textView3"
+                    style="@style/test_result_text"
+                    android:layout_width="wrap_content"
+                    android:text="验证项测试结果" />
+
+                <EditText
+                    android:id="@+id/edt_test_result"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/textSize10"
+                    android:layout_marginRight="@dimen/textSize30"
+                    android:background="@color/gray1"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textSize="@dimen/textSize12"
+                    android:visibility="gone"
+                    />
+                <Spinner
+                    android:layout_marginLeft="15dp"
+                    android:id="@+id/sp_result"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    ></Spinner>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/tv_complete"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/shape_round_rect_blue"
+                        android:gravity="center"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="5dp"
+                        android:text="完成测试"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textSize14" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lv_on_key_test"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/tv_one_key_test"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/shape_round_rect_blue"
+                        android:gravity="center"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="5dp"
+                        android:text="一键测试"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textSize14" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

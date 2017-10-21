@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.beidian.beidiannonxinling.ui.widget.CustomScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+            <include
+                layout="@layout/top_bar_leftback"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="39dp"
+                android:background="@color/appMainColor"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+               >
+                <TextView
+                    android:id="@+id/tv_siteName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_weight="1"
+                    android:text="站点名称"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize14" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="扇区数:\t"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textSize14" />
+
+                    <TextView
+                        android:id="@+id/tv_cellCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="30dp"
+                        android:text="3"
+                        android:textColor="@color/blue1"
+                        android:textSize="@dimen/textSize24" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <!--android:background="@color/gray3"-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/gray3"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <com.beidian.beidiannonxinling.ui.widget.CustomExpandableListView
+                    android:id="@+id/expandableListView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:childDivider="@color/transparent"
+                    android:divider="@color/divider_gray"
+                    android:dividerHeight="0.5dp" />
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:id="@+id/view1"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/gray3" />
+
+                <View
+                    android:id="@+id/view2"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/view1"
+                    android:background="@color/white" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/shape_round_white"
+                    android:src="@drawable/icon_sign_pen" />
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:paddingBottom="10dp"
+
+                android:text="测试结果"
+                android:textColor="@color/black1"
+                android:textSize="@dimen/textSize14" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <com.beidian.beidiannonxinling.ui.widget.CustomListView
+                    android:id="@+id/listView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/gray3"
+                    android:divider="@color/transparent"
+                    android:padding="15dp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="遗留问题"
+                android:textColor="@color/black1"
+                android:textSize="@dimen/textSize14" />
+
+            <EditText
+                android:id="@+id/et_leaveProblem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/gray3"
+                android:gravity="start"
+                android:minHeight="60dp"
+                android:padding="10dp"
+                android:textSize="@dimen/textSize14" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="测试人员签名"
+                android:textColor="@color/black1"
+                android:textSize="@dimen/textSize14" />
+
+            <RelativeLayout
+                android:id="@+id/rl_signArea"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/gray3">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="签名区域"
+                    android:textColor="@color/gray2"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/iv_signImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:scaleType="fitXY" />
+
+                <TextView
+                    android:id="@+id/tv_signLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/black1"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_signTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/black1"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/shape_rect_gray"
+                android:gravity="center_vertical"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
+
+                <ImageView
+                    android:id="@+id/iv_takePhoto"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/icon_take_photo" />
+
+                <ImageView
+                    android:id="@+id/iv_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="10dp"
+                    android:scaleType="centerInside" />
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/bt_commit"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="40dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/shape_round_rect_blue"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="任务提交"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+
+    </com.beidian.beidiannonxinling.ui.widget.CustomScrollView>
+
+    <include
+        layout="@layout/top_bar_leftback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>

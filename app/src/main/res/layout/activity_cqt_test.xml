@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_cqt_test"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.beidian.beidiannonxinling.ui.activity.CqtTestActivity">
+    <include
+        android:id="@+id/inc_title"
+        layout="@layout/top_bar_leftback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_testInfo"
+            style="@style/text_size11dp"
+            android:layout_width="0dp"
+            android:layout_height="34dp"
+            android:layout_weight="1"
+            android:background="@color/cqt_button_background_blue"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="@string/test_info"
+            android:textColor="@color/text_color_white"/>
+        <TextView
+            android:id="@+id/tv_workInfo"
+            style="@style/text_size11dp"
+            android:layout_width="0dp"
+            android:layout_height="34dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="@string/base_info"
+            android:textColor="@color/text_color_gray"/>
+
+    </LinearLayout>
+    <FrameLayout android:layout_width="match_parent"
+                 android:layout_height="2dp"
+                 android:background="@color/shadow_color_line"/>
+
+    <FrameLayout
+        android:id="@+id/fl_testBody"
+        android:layout_width="match_parent"
+        android:orientation="vertical" android:layout_height="230dp">
+
+    </FrameLayout>
+    <Button
+        android:id="@+id/bt_stop"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/icon_test_stop"/>
+    <RelativeLayout android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp">
+        <com.beidian.beidiannonxinling.ui.widget.BounceBallView
+            android:id="@+id/bbv1"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+
+            app:anim_duration="3300"
+            app:ball_count="15"
+            app:ball_delay="220"
+            app:bounce_count="3"/>
+        <!--<TextView android:layout_width="wrap_content"-->
+                  <!--android:layout_height="wrap_content"-->
+                  <!--android:layout_alignBottom="@id/bbv1"-->
+                  <!--android:layout_centerHorizontal="true"-->
+                  <!--android:textColor="@color/cqt_button_background_blue"-->
+                  <!--android:textSize="20dp"/>-->
+    </RelativeLayout>
+
+
+</LinearLayout>

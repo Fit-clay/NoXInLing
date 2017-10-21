@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/ll_pci"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground">
+
+        <TextView
+
+            style="@style/slide_meny_textsize"
+            android:layout_width="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="PCI" />
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:layout_weight="1">
+
+            <CheckBox
+                android:id="@+id/check_pcl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="20dp"
+                android:button="@drawable/change_box"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/menu_line" />
+
+    <LinearLayout
+        android:id="@+id/ll_rsrp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground">
+
+        <TextView
+
+            style="@style/slide_meny_textsize"
+            android:layout_width="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="RSRP" />
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:layout_weight="1">
+
+            <CheckBox
+                android:id="@+id/check_rsrp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="20dp"
+                android:button="@drawable/change_box"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/menu_line" />
+
+    <LinearLayout
+        android:id="@+id/ll_sinr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground">
+
+        <TextView
+            style="@style/slide_meny_textsize"
+            android:layout_width="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="SINR" />
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:layout_weight="1">
+
+            <CheckBox
+                android:id="@+id/check_sinr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="20dp"
+                android:button="@drawable/change_box"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/menu_line" />
+
+    <LinearLayout
+        android:id="@+id/ll_app_dl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground">
+
+        <TextView
+
+            style="@style/slide_meny_textsize"
+            android:layout_width="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="APP Throughput DL Kbps" />
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:layout_weight="1">
+
+            <CheckBox
+                android:id="@+id/check_dl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="20dp"
+                android:button="@drawable/change_box"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/menu_line" />
+
+    <LinearLayout
+        android:id="@+id/ll_app_ul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground">
+
+        <TextView
+            style="@style/slide_meny_textsize"
+            android:layout_width="wrap_content"
+
+            android:paddingLeft="10dp"
+            android:text="APP Throughput UL Kbps" />
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:layout_weight="1">
+
+            <CheckBox
+                android:id="@+id/check_ul"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="20dp"
+                android:button="@drawable/change_box"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        >
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+
+            <Button
+                android:id="@+id/btn_gis_dialog_con"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_button"
+                android:padding="5dp"
+                android:textColor="@color/white"
+                android:text="确定"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btn_gis_dialog"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_button"
+                android:padding="5dp"
+                android:textColor="@color/white"
+                android:text="取消"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

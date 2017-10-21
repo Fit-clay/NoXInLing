@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/ly_base_antenna"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/basic_message_collection_background"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        >
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/net_creat"
+                android:layout_marginLeft="10dp"
+                />
+            <TextView
+                android:id="@+id/tx_get_antenna_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="21dp"
+                android:text="@string/antenna_message_collection"
+                android:textSize="@dimen/textSize13dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginRight="15dp"
+            >
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.9"
+                android:visibility="gone"
+                />
+            <TextView
+                android:id="@+id/tv_delete_antenna"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="删除"
+                android:background="@drawable/text_shape"
+                android:layout_marginRight="20dp"
+                android:gravity="center"
+                />
+            <ImageView
+                android:id="@+id/antenna_message_img_gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/going"
+                android:visibility="invisible"
+                />
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.05"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        >
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            />
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/plannint_value"
+            android:textSize="@dimen/textSize13dp"
+            />
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/collection_value"
+            android:textSize="@dimen/textSize13dp"
+            />
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/uniformity"
+            android:textSize="@dimen/textSize13dp"
+            />
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/base_info_ll"
+        >
+        <TextView
+            style="@style/base_info_ll_cell_tx"
+            android:text="@string/lat_long"
+
+            />
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/et_lat_plannint"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                style="@style/edt_style"
+                android:background="@color/text_color_basic"
+                />
+            <EditText
+                android:id="@+id/et_long_plannint"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                style="@style/edt_style"
+                android:background="@color/text_color_basic"
+                />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/et_lat_collection"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:background="@color/text_color_basic"
+                style="@style/edt_styles"
+                android:hint="经度"
+                />
+            <EditText
+                android:id="@+id/et_long_collection"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:background="@color/text_color_basic"
+                style="@style/edt_styles"
+                android:hint="纬度"
+                />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_collection_eci"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/text_shape"
+            android:padding="3dp"
+            android:text="采集"
+            android:textSize="@dimen/textSize12" />
+
+        <TextView
+            android:id="@+id/tv_base_district_consistency"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="20dp"
+            android:text="是"
+            android:padding="5dp"
+            android:textSize="@dimen/textSize12"
+            android:gravity="center"
+            />
+        <Spinner
+            android:layout_marginLeft="5dp"
+            android:id="@+id/sp_lat_long"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:minHeight="20dp"
+            android:background="@drawable/shape_test_work_spinner"
+            android:visibility="gone"
+            >
+        </Spinner>
+            </LinearLayout>
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/base_info_ll"
+        >
+        <TextView
+            style="@style/base_info_ll_cell_tx"
+            android:text="@string/antenna_platform_name"
+
+            />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2" />
+
+        <EditText
+            android:id="@+id/et_antenna_plannint"
+
+            style="@style/base_info_ll_cell_et"
+
+            />
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            />
+
+        <EditText
+            android:id="@+id/et_antenna_cellection"
+            style="@style/base_info_ll_cell_et"
+            android:enabled="true"
+            />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            />
+        <Spinner
+            android:id="@+id/sp_antenna_platform_name"
+            style="@style/test_basicspinnerstyle"
+            >
+        </Spinner>
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/gray1" />
+    <LinearLayout
+        style="@style/base_info_ll"
+        >
+        <TextView
+            style="@style/base_info_ll_cell_tx"
+            android:text="@string/azimuth_angles"
+
+            />
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            />
+        <EditText
+            android:id="@+id/et_angles_plannint"
+            style="@style/base_info_ll_cell_et"
+
+            />
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            />
+        <EditText
+            android:id="@+id/et_angles_cellection"
+
+            style="@style/base_info_ll_cell_et"
+            android:enabled="true"/>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/tx_test_mechanical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_shape"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:textSize="@dimen/textSize13dp"
+                android:text="测试"
+               />
+        </LinearLayout>
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/base_info_ll"
+        >
+        <TextView
+            style="@style/base_info_ll_cell_tx"
+            android:text="@string/angles"
+
+            />
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            />
+        <EditText
+            android:id="@+id/et_angles_plannint_value"
+            style="@style/base_info_ll_cell_et"
+
+            />
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            />
+        <EditText
+            android:id="@+id/et_angles_cellection_value"
+
+            style="@style/base_info_ll_cell_et"
+            android:enabled="true"
+            />
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/tx_test_camera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_shape"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:textSize="@dimen/textSize13dp"
+                android:text="测试"
+                />
+        </LinearLayout>
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/base_info_ll"
+        >
+        <TextView
+            style="@style/base_info_ll_cell_tx"
+            android:text="@string/antenna_hight"
+
+            />
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            />
+        <EditText
+            android:id="@+id/et_antenna_hight"
+
+            style="@style/base_info_ll_cell_et"
+            android:background="@color/text_color_basic"
+            />
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            />
+        <TextView
+            style="@style/base_info_ll_cell_tx"
+            android:text="@string/antenna_surface"
+            android:textSize="@dimen/textSize13dp"
+            />
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            />
+        <Spinner
+            android:id="@+id/sp_antenna_surface"
+            style="@style/test_basicspinnerstyle"
+            >
+        </Spinner>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="@dimen/textSize13dp"
+        android:text="@string/antenna_cover_picture"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="8.5"
+            android:background="@color/basic_message_collection_background"
+            android:gravity="center_vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_take_picture_ant"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@color/basic_message_collection_background"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"></LinearLayout>
+
+            <ImageView
+                android:id="@+id/base_station_take_picture_ant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:src="@mipmap/add_imageview" />
+
+        </LinearLayout>
+
+        <android.support.v4.widget.Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5" />
+    </LinearLayout>
+
+
+</LinearLayout>

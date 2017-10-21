@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <LinearLayout style="@style/shifen_base_info_ly"
+        android:background="@color/gray1"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="1"
+            android:gravity="left|center_vertical"
+            android:text="天线照片采集" />
+
+        <ImageView
+            android:id="@+id/iv_add_antenna"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:layout_marginRight="30dp"
+            android:src="@mipmap/add_black"
+            />
+            <ImageView
+            android:id="@+id/iv_delete_antenna"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:layout_marginRight="30dp"
+            android:src="@mipmap/close_black"
+            android:visibility="gone"
+                />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="建筑物全景照正面:" />
+
+            <ImageView
+                android:id="@+id/iv_item_build"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:src="@mipmap/add_imageview"
+                android:scaleType="fitXY"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="楼内天线1:" />
+
+                <ImageView
+                    android:id="@+id/iv_item_antenna_1"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/add_imageview"
+                    android:layout_marginLeft="20dp"
+                    android:scaleType="fitXY"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="楼内天线2:" />
+
+                <ImageView
+                    android:id="@+id/iv_item_antenna_2"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/add_imageview"
+                    android:layout_marginLeft="20dp"
+                    android:scaleType="fitXY"
+
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+              android:background="@color/cqt_button_background_white"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:background="@color/cqt_button_background_white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:gravity="center_vertical"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="扇区选择"
+            />
+        <Spinner
+            android:id="@+id/sp_sq"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/gis_dialog_sp"
+
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="24dp">
+
+        </Spinner>
+        
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="测试模板"
+            />
+        <Spinner
+            android:id="@+id/sp_mode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/gis_dialog_sp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="24dp">
+
+        </Spinner>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        >
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="测试选项" />
+
+        <TextView
+            android:id="@+id/tx_test"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="30dp"
+            android:background="#F1F1F1"
+            android:layout_marginLeft="12dp"
+            android:hint="请选择测试选项"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:layout_marginRight="24dp">
+
+        </TextView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="测试备注"
+            />
+
+        <EditText
+            android:id="@+id/et_remarks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="30dp"
+            android:background="#F1F1F1"
+            android:layout_marginLeft="12dp"
+            android:paddingLeft="10dp"
+            android:layout_marginRight="24dp"
+            android:hint="请输入备注"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        >
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+
+        <Button
+            android:id="@+id/btn_gis_dialog_con"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_button"
+            android:padding="5dp"
+            android:textColor="@color/white"
+            android:text="确定"
+            />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_gis_dialog"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_button"
+            android:padding="5dp"
+            android:textColor="@color/white"
+            android:text="取消"
+            />
+            </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

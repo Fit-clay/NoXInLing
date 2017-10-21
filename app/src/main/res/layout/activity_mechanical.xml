@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <FrameLayout
+        android:id="@+id/container_preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <SurfaceView
+        android:id="@+id/preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_centerInParent="true"
+        android:background="@android:color/holo_red_dark" />
+
+    <View
+        android:layout_width="2dp"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="@android:color/holo_red_dark" />
+
+    <com.beidian.beidiannonxinling.ui.widget.CircularSeekBar
+        android:id="@+id/cbs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:circle_x_radius="160dp"
+        app:circle_y_radius="160dp"
+        app:end_angle="270"
+        app:max="1000"
+        app:pointer_alpha_ontouch="100"
+        app:pointer_color="#0174DF"
+        app:pointer_halo_color="#880174DF"
+        app:progress="0"
+        app:start_angle="270"
+        app:use_custom_radii="true" />
+
+    <TextView
+        android:layout_marginLeft="@dimen/survey_common_margin"
+        android:layout_marginTop="@dimen/survey_common_margin"
+        android:text="@string/zero_angle"
+        android:textColor="@android:color/holo_orange_light"
+        android:id="@+id/tv_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:padding="@dimen/survey_com_padding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <Button
+            android:textColor="@android:color/white"
+            android:background="@drawable/shape_user_exit"
+            android:id="@+id/bt_cancel"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:text="@string/cancel" />
+
+        <Button
+            android:layout_marginLeft="@dimen/survey_common_margin"
+            android:textColor="@android:color/white"
+            android:background="@drawable/shape_user_exit"
+            android:id="@+id/bt_record_mechanical"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:text="@string/record" />
+    </LinearLayout>
+
+</RelativeLayout>

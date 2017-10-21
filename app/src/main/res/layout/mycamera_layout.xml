@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1">
+
+        <FrameLayout
+            android:id="@+id/camera_preview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"/>
+
+        <View
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:layout_width="2dp"
+            android:layout_height="120dp"
+            android:layout_centerInParent="true"
+            android:background="@android:color/holo_red_dark" />
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_alignParentBottom="true"
+                      android:gravity="center"
+                      android:orientation="vertical">
+            <TextView
+
+                android:id="@+id/tv_oritation_dirscrtion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="60°"
+                android:textColor="@android:color/holo_green_light"
+                android:textSize="33sp"/>
+            <TextView
+                android:id="@+id/tv_photo_remind"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="请在角度显示绿色后拍摄"
+                android:textSize="12sp"/>
+            <TextView
+                android:id="@+id/tv_ciganrao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@android:color/holo_green_light"
+                android:textSize="12sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/emi_remind_camera"
+                android:textColor="@android:color/holo_green_light"
+                android:textSize="12sp"/>
+            <LinearLayout
+            android:id="@+id/ll_0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:padding="@dimen/survey_com_padding">
+
+            <Button
+            android:id="@+id/bt_cancel"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_user_exit"
+            android:text="@string/cancel"
+            android:textColor="@android:color/white"/>
+
+            <Button
+            android:id="@+id/bt_record_mechanical"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="@dimen/survey_common_margin"
+            android:layout_weight="1"
+            android:background="@drawable/shape_user_exit"
+            android:text="@string/record"
+            android:textColor="@android:color/white"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

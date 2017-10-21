@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.ColorManagerActivity">
+
+    <include layout="@layout/top_bar_leftback">
+
+    </include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:background="@color/appMainColor"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="LTE"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_pci"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground">
+
+            <TextView
+
+                style="@style/slide_meny_textsize"
+                android:layout_width="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="PCI" />
+
+            <include layout="@layout/menu_right" />
+        </LinearLayout>
+
+        <include layout="@layout/menu_line" />
+
+        <LinearLayout
+            android:id="@+id/ll_rsrp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground">
+
+            <TextView
+
+                style="@style/slide_meny_textsize"
+                android:layout_width="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="RSRP" />
+
+            <include layout="@layout/menu_right" />
+        </LinearLayout>
+
+
+
+        <include layout="@layout/menu_line" />
+
+        <LinearLayout
+            android:id="@+id/ll_sinr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground">
+
+            <TextView
+                style="@style/slide_meny_textsize"
+                android:layout_width="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="SINR" />
+
+            <include layout="@layout/menu_right" />
+        </LinearLayout>
+
+        <include layout="@layout/menu_line" />
+
+        <LinearLayout
+            android:id="@+id/ll_app_dl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground">
+
+            <TextView
+
+                style="@style/slide_meny_textsize"
+                android:layout_width="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="APP Throughput DL Kbps" />
+
+            <include layout="@layout/menu_right" />
+        </LinearLayout>
+
+        <include layout="@layout/menu_line" />
+
+        <LinearLayout
+            android:id="@+id/ll_app_ul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground">
+
+            <TextView
+                style="@style/slide_meny_textsize"
+                android:layout_width="wrap_content"
+
+                android:paddingLeft="10dp"
+                android:text="APP Throughput UL Kbps" />
+
+            <include layout="@layout/menu_right" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

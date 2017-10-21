@@ -1,0 +1,133 @@
+[
+    {
+        "id": 1,
+        "testtime": "10000",
+        "testtype": "idle"
+    },
+    {
+        "id": 2,
+        "testtime": "10000",
+        "testtype": "wait"
+    },
+    {
+        "id": 3,
+        "targeturl": {
+            "name": "百度",
+            "url": "htttp://www.baidu.com"
+        },
+        "testcount": "10",
+        "testinterval": "10",
+        "testmode": "time",
+        "testtime": "60",
+        "testtype": "ping"
+    },
+    {
+        "id": 4,
+        "targeturl": {
+            "name": "百度",
+            "url": "htttp://www.baidu.com"
+        },
+        "testcount": "10",
+        "testinterval": "10",
+        "testmode": "time",
+        "testtime": "60",
+        "testtype": "http"
+    },
+    {
+        "blockingtime": "20",
+        "callphone": "10086",
+        "calltype": "Voice",
+        "id": 7,
+        "retentiontime": "20",
+        "testcount": "10",
+        "testinterval": "6",
+        "testmode": "time",
+        "testtime": "20",
+        "testtype": "call_csfbb"
+    },
+    {
+        "blockingtime": "20",
+        "callphone": "10086",
+        "calltype": "Voice",
+        "id": 8,
+        "retentiontime": "20",
+        "testcount": "10",
+        "testinterval": "6",
+        "testmode": "time",
+        "testtime": "20",
+        "testtype": "call_voltez"
+    },
+    {
+        "blockingtime": "",
+        "callphone": "",
+        "calltype": "",
+        "id": 5,
+        "retentiontime": "3",
+        "testcount": "10",
+        "testinterval": "10",
+        "testmode": "time",
+        "testtime": "60",
+        "testtype": "attach"
+    },
+    {
+        "blockingtime": "20",
+        "callphone": "10086",
+        "calltype": "Voice",
+        "id": 6,
+        "retentiontime": "20",
+        "testcount": "10",
+        "testinterval": "6",
+        "testmode": "time",
+        "testtime": "20",
+        "testtype": "call_csfbz"
+    },
+    {
+        "blockingtime": "20",
+        "callphone": "10086",
+        "calltype": "Voice",
+        "id": 9,
+        "retentiontime": "20",
+        "testcount": "10",
+        "testinterval": "6",
+        "testmode": "timecount",
+        "testtime": "20",
+        "testtype": "call_volteb"
+    },
+    {
+        "exectimeout": "10",
+        "ftpmode": "active",
+        "id": 10,
+        "password": "Ceping&2015",
+        "port": "21",
+        "serveraddress": "101.231.82.82",
+        "serverpath": "/upload",
+        "testcount": "3",
+        "testinterval": "3",
+        "testmode": "count",
+        "testtime": "60",
+        "testtype": "ftp_up",
+        "threadcount": "3",
+        "timeout": "60",
+        "uploadsize": "100M",
+        "username": "ceping"
+    },
+    {
+        "exectimeout": "10",
+        "filename": "2M.rar",
+        "ftpmode": "active",
+        "id": 11,
+        "password": "Ceping&2015",
+        "port": "21",
+        "serveraddress": "101.231.82.82",
+        "serverpath": "/",
+        "testcount": "3",
+        "testinterval": "3",
+        "testmode": "time",
+        "testtime": "60",
+        "testtype": "ftp_down",
+        "threadcount": "3",
+        "timeout": "60",
+        "uploadsize": "",
+        "username": "ceping"
+    }
+]

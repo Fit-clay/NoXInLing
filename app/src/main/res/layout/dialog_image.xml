@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+<ImageView
+    android:id="@+id/iv_image"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:src="@mipmap/ic_launcher"
+    android:scaleType="fitXY"
+    />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        >
+        <LinearLayout
+            android:id="@+id/ly_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            >
+        <TextView
+            android:id="@+id/tv_delete"
+            android:text="删除"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:background="@color/gray1"
+            android:gravity="center"
+            />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        >
+        <TextView
+            android:id="@+id/tv_confirm"
+            android:text="确定"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:background="@color/gray1"
+            android:gravity="center"
+            />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

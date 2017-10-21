@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/call"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="呼叫" />
+
+    <Button
+        android:id="@+id/call2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="飞行模式" />
+
+    <Button
+        android:id="@+id/call3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="关闭飞行模式" />
+
+    <Button
+        android:id="@+id/call4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="获取信号数据" />
+
+    <Button
+        android:id="@+id/call5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ping测试" />
+
+    <Button
+        android:id="@+id/call6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="http测试" />
+
+    <Button
+        android:id="@+id/call7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ftp下载" />
+
+    <Button
+        android:id="@+id/call8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ftp上传" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/call9"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="ORM创建" />
+
+        <Button
+            android:id="@+id/call10"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="ORM删除" />
+
+        <Button
+            android:id="@+id/call11"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="ORM获取" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/call12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="测试流程" />
+</LinearLayout>

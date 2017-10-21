@@ -1,0 +1,319 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/appMainColor</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimaryDark</item>
+        <item name="colorControlNormal">#fff</item>
+    </style>
+    <style name="dialogCommon" parent="@android:style/Theme.Dialog">
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowNoTitle">true</item>
+
+        <item name="android:windowBackground">@drawable/dialog_bg</item>
+    </style>
+
+    <style name="ActionSheetDialogStyle" parent="@android:style/Theme.Dialog">
+        <!-- 背景透明 -->
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+                <!-- 浮于Activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- Dialog以外的区域模糊效果 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowCloseOnTouchOutside">false</item>
+        <!-- 半透明 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- Dialog进入及退出动画 -->
+        <item name="android:windowAnimationStyle">@style/ActionSheetDialogAnimation</item>
+    </style>
+
+
+    <!-- ActionSheet进出动画 -->
+    <style name="ActionSheetDialogAnimation" parent="@android:style/Animation.Dialog">
+
+        <item name="android:windowEnterAnimation">@anim/actionsheet_dialog_in</item>
+        <!-- <item name="android:windowExitAnimation">@anim/actionsheet_dialog_out</item> -->
+    </style>
+
+    <style name="inputDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/dialog_bg</item>
+    </style>
+    <style name="customRoundRectDialogStyle" parent="android:style/Theme.Dialog">
+        <!-- 背景透明 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 没有标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 背景模糊 -->
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="text_size11dp">
+        <item name="android:textSize">11dp</item>
+        <item name="android:textColor">@color/text_color_gray</item>
+    </style>
+
+    <style name="cqt_fragment_workInfo" parent="text_size11dp">
+        <item name="android:background">@drawable/shape_test_info_tvbg</item>
+        <item name="android:paddingLeft">18dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="edt_style">
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">13dp</item>
+        <item name="android:enabled">false</item>
+    </style>
+
+
+    <style name="edt_styles">
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">13dp</item>
+    </style>
+
+    <style name="test_result_linear">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <!--颜色设置页面 -->
+    <style name="color_manage_spinner_style">
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/shape_color_config_spinner</item>
+        <item name="android:padding">1dp</item>
+        <item name="android:spinnerMode">dropdown</item>
+    </style>
+
+    <style name="test_result_text">
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/textSize12</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <declare-styleable name="roundedimageview">
+        <attr name="border_thickness" format="dimension" />
+        <attr name="border_inside_color" format="color" />
+        <attr name="border_outside_color" format="color"></attr>
+    </declare-styleable>
+    <style name="slide_meny_textsize">
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_height">40dp</item>
+    </style>
+
+
+    <style name="MyDialog" parent="@android:style/Theme.NoTitleBar">
+        <!-- 是否有边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!--是否在悬浮Activity之上  -->
+        <item name="android:windowIsFloating">true</item>
+        <!--标题  -->
+        <item name="android:windowNoTitle">true</item>
+        <!--阴影  -->
+        <item name="android:windowIsTranslucent">true</item><!--半透明-->
+        <!-- 点外边可以消失  -->
+        <item name="android:windowCloseOnTouchOutside">true</item>
+    </style>
+
+
+    <style name="loading_dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <!-- base_info LinearLayout样式 -->
+    <style name="base_info_ll">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <!-- base_info 子LinearLayout样式 -->
+    <style name="base_info_ll_children">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <!-- base_info textview的基本样式 -->
+    <style name="base_info_tx" >
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textSize">@dimen/textSize13dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <!-- base_info 基础信息textview样式 -->
+    <style name="base_info_ll_children_tx" parent="base_info_tx">
+        <item name="android:layout_weight">2</item>
+    </style>
+    <!-- base_info textview的样式 -->
+    <style name="base_info_ll_cell_tx" parent="base_info_tx">
+        <item name="android:layout_weight">1</item>
+    </style>
+    <!-- base_info editext的基本样式 -->
+    <style name="base_info_et" >
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">13dp</item>
+        <item name="android:enabled">false</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:background">@color/text_color_basic</item>
+    </style>
+    <!-- base_info 基础信息editext样式 -->
+    <style name="base_info_ll_children_et" parent="base_info_et" >
+        <item name="android:layout_weight">2</item>
+    </style>
+    <!-- base_info 小区editext的样式 -->
+    <style name="base_info_ll_cell_et" parent="base_info_et">
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="net_framework_style">
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">3</item>
+        <item name="android:background">@drawable/shape_test_work_spinner</item>
+    </style>
+
+    <!--小球自由落体弹跳动画效果的自定义控件-->
+    <declare-styleable name="BounceBallView">
+        <attr name="bounce_count" format="integer"/>
+        <attr name="ball_color" format="color"/>
+        <attr name="ball_radius" format="dimension"/>
+        <attr name="anim_duration" format="integer"/>
+        <attr name="ball_count" format="integer"/>
+        <attr name="ball_delay" format="integer"/>
+        <attr name="physic_mode" format="boolean"/>
+        <attr name="random_color" format="boolean"/>
+        <attr name="random_radius" format="boolean"/>
+        <attr name="random_path" format="boolean"/>
+    </declare-styleable>
+
+    <style name="edt_style_base" parent="edt_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginLeft">@dimen/textSize10</item>
+        <item name="android:layout_marginRight">@dimen/textSize30</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:background">@color/gray1</item>
+        <item name="android:textSize">@dimen/textSize12</item>
+    </style>
+
+    <style name="edt_style_width100_enabled_no">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginLeft">@dimen/textSize10</item>
+        <item name="android:background">@color/gray1</item>
+        <item name="android:textSize">@dimen/textSize12</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:enabled">false</item>
+        <item name="android:paddingLeft">10dp</item>
+    </style>
+
+    <style name="cqt_test_spinner">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginLeft">@dimen/textSize10</item>
+        <item name="android:layout_marginRight">@dimen/textSize30</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/shape_test_work_spinner</item>
+        <item name="android:paddingRight">5dp</item>
+    </style>
+
+    <style name="shifen_base_info_ly">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_marginTop">5dp</item>
+    </style>
+
+    <style name="shifen_base_info_tv">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="shifen_base_info_edt">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@color/gray1</item>
+    </style>
+
+    <style name="construction_tv">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:gravity">center_vertical|left</item>
+        <item name="android:layout_marginLeft">30dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+
+    <style name="sp_construction">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/shape_test_work_spinner</item>
+    </style>
+
+    <style name="edt_construction">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:background">@color/gray1</item>
+    </style>
+
+    <style name="popuwindown_test_config_tv">
+        <item name="android:layout_width">70dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/shape_round_withe</item>
+        <item name="android:layout_margin">5dp</item>
+    </style>
+
+
+    <style name="GisDialog"  >
+        <item name="android:windowIsFloating">true</item><!--是否浮现在activity之上-->
+        <item name="android:windowNoTitle">true</item><!--无标题-->
+        <item name="android:windowBackground">@drawable/dialog_shape</item>
+
+    </style>
+
+    <style name="gis_dialog_sp">
+
+        <item name="android:background">@drawable/gis_dialog_spinner</item>
+        <item name="android:minHeight">30dp</item>
+        <item name="android:paddingLeft">10dp</item>
+    </style>
+</resources>

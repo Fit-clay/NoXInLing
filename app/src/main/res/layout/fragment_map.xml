@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.baidu.mapapi.map.TextureMapView
+        android:id="@+id/map_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"></com.baidu.mapapi.map.TextureMapView>
+    <Button
+        android:id="@+id/request"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/icon_locat" />
+</RelativeLayout>

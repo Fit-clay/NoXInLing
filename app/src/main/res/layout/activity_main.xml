@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <include
+        android:id="@+id/top_bar"
+        layout="@layout/top_bar_leftback_righttext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <!--底部常用工具导航栏-->
+    <com.beidian.beidiannonxinling.ui.widget.CustomHorizontalScrollView
+        android:id="@+id/bottom_navigation_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/gray3"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="72dp"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/icon_location_touch"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:paddingTop="10dp"
+                android:text="方位角测量"
+                android:textSize="@dimen/textSize12" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="72dp"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/icon_trangole_touch"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:paddingTop="10dp"
+                android:text="下倾角测量"
+                android:textSize="@dimen/textSize12" />
+
+            <TextView
+                android:layout_width="72dp"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/icon_web_touch"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:paddingTop="10dp"
+                android:text="FTP测试"
+                android:textSize="@dimen/textSize12" />
+
+            <TextView
+                android:layout_width="72dp"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/icon_phone_touch"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:paddingTop="10dp"
+                android:text="语音拨打"
+                android:textSize="@dimen/textSize12" />
+
+            <TextView
+                android:layout_width="72dp"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/icon_message_touch"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:paddingTop="10dp"
+                android:text="网页测试"
+                android:textSize="@dimen/textSize12" />
+
+            <TextView
+                android:layout_width="72dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/icon_ping_touch"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:paddingTop="10dp"
+                android:text="PING测试"
+                android:textSize="@dimen/textSize12" />
+
+        </LinearLayout>
+
+    </com.beidian.beidiannonxinling.ui.widget.CustomHorizontalScrollView>
+
+    <TextView
+        android:id="@+id/tips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bottom_navigation_bar"
+        android:background="@color/gray3"
+        android:text="常用工具"
+        android:gravity="center"
+        android:paddingTop="2dp" />
+
+    <LinearLayout
+        android:id="@+id/ll_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/tips"
+        android:background="@color/gray3"
+        android:orientation="vertical">
+        <include
+            layout="@layout/menu_line"></include>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/ll_line"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/top_bar"
+        android:orientation="vertical">
+        <include
+            layout="@layout/item_title_serch">
+        </include>
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButton_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/selector_switch_radiobutton"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="列表模式"
+                android:textColor="@color/selector_switch_radiobutton" />
+
+            <RadioButton
+                android:id="@+id/radioButton_map"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/selector_switch_radiobutton"
+                android:button="@null"
+                android:checked="false"
+                android:gravity="center"
+                android:text="地图模式"
+                android:textColor="@color/selector_switch_radiobutton" />
+
+
+        </RadioGroup>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/divider_gray" />
+
+        <!--内容面板-->
+        <FrameLayout
+            android:id="@+id/contentPanel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="hong_zhan_difficult">
+        <item>容易</item>
+        <item>困难</item>　　
+    </string-array>
+    <string-array name="is_rru">
+        <item>是</item>
+        <item>否</item>　　
+    </string-array>
+    <string-array name="test_model">
+        <item>平层测试</item>
+        <item>电梯测试</item>　　
+    </string-array>
+    <string-array name="village_corver_tp">
+        <item>室外</item>
+        <item>室内</item>　　
+    </string-array>
+    <string-array name="antenna_surfaces">
+        <item>美化天线</item>
+        <item>普通天线</item>　　
+        <item>集束天线</item>　
+    </string-array>
+
+    <string-array name="net_framework_state">
+        <item>通过</item>
+        <item>不通过</item>　　
+    </string-array>
+    <string-array name="qualified_type">
+        <item>合格</item>
+        <item>不合格</item>　　
+    </string-array>
+    <string-array name="permissions">
+        <item>@string/permission_recode_audio_hint</item>
+        <item>@string/permission_get_accounts_hint</item>
+        <item>@string/permission_read_phone_hint</item>
+        <item>@string/permission_call_phone_hint</item>
+        <item>@string/permission_camera_hint</item>
+        <item>@string/permission_access_fine_location_hint</item>
+        <item>@string/permission_access_coarse_location_hint</item>
+        <item>@string/permission_read_external_hint</item>
+        <item>@string/permission_white_external_hint</item>
+    </string-array>
+    <string-array name="coverage_color_left_array">
+        <item>大于</item>
+        <item>大于等于</item>
+    </string-array>
+
+
+    <string-array name="coverage_color_right_array">
+        <item>小于</item>
+        <item>小于等于</item>
+    </string-array>
+    <string-array name="ways_test">
+        <item>手动打点</item>
+        <item>自动打点</item>
+    </string-array>
+    <string-array name="model_test_model">
+        <item >计次</item>
+        <item>计时</item>
+        <item>限时计次</item>
+    </string-array>
+    <string-array name="model_call_model">
+        <item>语音电话</item>
+        <item></item>
+        <item></item>
+    </string-array>
+
+
+    <string-array name="unit">
+        <item>一单元</item>
+        <item>二单元</item>
+        <item>三单元</item>
+        <item>四单元</item>
+        <item>五单元</item>
+        <item>六单元</item>
+    </string-array>
+</resources>

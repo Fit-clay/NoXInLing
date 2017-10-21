@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="410dp"
+    >
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0.6"
+        android:background="@color/black_55"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+
+        >
+        <!--<FrameLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content">-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginRight="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/popuwindown_test_config_tv"
+                android:text="小区选择" />
+
+            <Spinner
+                android:id="@+id/sp_change_distract"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_test_white_spinner"
+                ></Spinner>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginRight="15dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+
+            >
+
+            <TextView
+                style="@style/popuwindown_test_config_tv"
+                android:text="经纬度" />
+
+            <EditText
+                android:id="@+id/edt_lat"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:background="@color/white"
+                android:textSize="13sp"
+                />
+
+            <EditText
+                android:id="@+id/edt_lng"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:background="@color/white"
+                android:textSize="13sp"
+
+                />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:src="@mipmap/location"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginRight="15dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            >
+
+            <TextView
+                style="@style/popuwindown_test_config_tv"
+                android:text="楼宇地址" />
+
+            <EditText
+                android:id="@+id/edt_build_address"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:textSize="13sp"
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginRight="15dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+
+            >
+
+            <TextView
+                style="@style/popuwindown_test_config_tv"
+                android:text="单元信息" />
+
+            <Spinner
+                android:id="@+id/sp_unit_info"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_test_white_spinner"
+
+                ></Spinner>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginRight="15dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+
+            >
+
+            <TextView
+                style="@style/popuwindown_test_config_tv"
+                android:text="楼层信息" />
+
+            <Spinner
+                android:id="@+id/sp_floor_info"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/shape_test_white_spinner"
+
+                ></Spinner>
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:background="@drawable/shape_round_withe"
+                android:layout_margin="5dp"
+                android:text="参考高度" />
+
+            <EditText
+                android:id="@+id/edt_reference_height"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:background="@color/white"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginRight="15dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            >
+
+            <TextView
+                style="@style/popuwindown_test_config_tv"
+                android:text="测试方式" />
+
+            <Spinner
+                android:id="@+id/sp_test_way"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_test_white_spinner"
+
+                ></Spinner>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginRight="15dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            >
+
+            <TextView
+                style="@style/popuwindown_test_config_tv"
+                android:text="测试模板" />
+
+            <Spinner
+                android:id="@+id/sp_test_model"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_test_white_spinner"
+
+                ></Spinner>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginRight="15dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+
+            >
+
+            <TextView
+                style="@style/popuwindown_test_config_tv"
+                android:text="测试项" />
+
+            <com.beidian.beidiannonxinling.ui.widget.MultiSpinner
+                android:id="@+id/sp_test_change"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:hint="请选择测试项"
+                android:gravity="center"
+                android:background="@color/gray1"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginRight="15dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            >
+
+            <TextView
+                style="@style/popuwindown_test_config_tv"
+                android:text="RRU" />
+
+            <EditText
+                android:id="@+id/edt_rru"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:textSize="13sp"
+                android:visibility="gone"
+                />
+
+            <Spinner
+                android:id="@+id/sp_rru"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_test_white_spinner"
+                ></Spinner>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginRight="15dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            >
+
+            <TextView
+                style="@style/popuwindown_test_config_tv"
+                android:text="备注" />
+
+            <EditText
+                android:id="@+id/edt_remark"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:textSize="13sp"
+
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tv_confirm"
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/shape_round_withe"
+                    android:gravity="center"
+                    android:text="确定" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tv_cancel"
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/shape_round_withe"
+                    android:gravity="center"
+                    android:text="取消" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</FrameLayout>

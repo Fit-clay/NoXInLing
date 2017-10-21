@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="qcomdiag">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/libs/qcomdiag.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

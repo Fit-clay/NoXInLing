@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <shape android:shape="rectangle">
+
+            <!-- 线的宽度，颜色灰色 -->
+            <stroke
+                android:width="0.5dp"
+                android:color="#F1F1F1"></stroke>
+        </shape>
+    </item>
+    <item>
+        <color android:color="#F1F1F1"></color>
+    </item>
+    <item android:right="1dp">
+        <bitmap
+            android:gravity="right"
+            android:src="@drawable/icon_blow_blue"></bitmap>
+    </item>
+</layer-list>

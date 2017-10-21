@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item>
+        <shape android:shape="rectangle">
+
+
+            <!-- 线的宽度，颜色灰色 -->
+            <stroke
+                android:width="0.34dp"
+                android:color="@color/colorInActive"></stroke>
+
+            <solid android:color="@android:color/transparent" />
+        </shape>
+    </item>
+    <item android:right="5dp">
+        <bitmap
+            android:gravity="right"
+            android:src="@drawable/icon_spinner_arrow_down"></bitmap>
+    </item>
+
+</layer-list>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/shape_round_rect_white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginTop="30dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/spinner_coverage_left"
+                    style="@style/color_manage_spinner_style"
+                    android:overlapAnchor="false" />
+
+                <EditText
+                    android:id="@+id/et_coverage_data_left"
+                    android:layout_width="55dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2dp"
+                    android:background="@drawable/shape_color_config_number_input"
+                    android:digits="0123456789-"
+                    android:gravity="center"
+                    android:inputType="numberSigned"
+                    android:maxLength="6"
+                    android:textColor="#555"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/spinner_coverage_right"
+                    style="@style/color_manage_spinner_style"
+                    android:overlapAnchor="false" />
+
+                <EditText
+                    android:id="@+id/et_coverage_data_right"
+                    android:layout_width="55dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2dp"
+                    android:background="@drawable/shape_color_config_number_input"
+                    android:digits="0123456789-"
+                    android:gravity="center"
+                    android:inputType="numberSigned"
+                    android:maxLength="6"
+                    android:textColor="#555"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/layout_sel_color"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:orientation="vertical"></View>
+        </LinearLayout>
+
+        <GridView
+            android:id="@+id/gv_color"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:horizontalSpacing="20dp"
+            android:listSelector="@null"
+            android:numColumns="6"
+            android:scrollbars="none"
+            android:verticalSpacing="20dp"
+            android:layout_marginTop="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/btn_coverage_ok"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/btn_blue_selector"
+                android:layout_weight="1"
+                android:textColor="@color/colorWhite"
+                android:text="确定" />
+
+            <Button
+                android:id="@+id/btn_coverage_cancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/shape_btn_blue_outline"
+                android:textColor="@color/colorTitleBarBackground"
+                android:text="取消" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+

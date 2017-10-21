@@ -1,0 +1,36 @@
+{
+  "parentList": [
+    {
+      "childList": [
+        {
+          "itemName": "基站1-201708301500",
+          "itemState": "通过"
+        },
+        {
+          "itemName": "基站22-201708301500",
+          "itemState": "通过22"
+        }
+      ],
+      "groupName": "基础信息采集",
+      "state": "已测试"
+    },
+    {
+      "childList": [
+        {
+          "itemName": "基站1-201708301501",
+          "itemState": "通过"
+        },
+        {
+          "itemName": "基站1-201708301502",
+          "itemState": "未通过"
+        },
+        {
+          "itemName": "基站1-201708301503",
+          "itemState": "通过"
+        }
+      ],
+      "groupName": "CQT定点测试",
+      "state": "未测试"
+    }
+  ]
+}

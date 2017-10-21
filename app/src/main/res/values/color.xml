@@ -1,0 +1,40 @@
+<resources>
+    
+	<color name="survey_title_text_color">#34DDED</color>
+	<color name="top_bar_color">#00ACFF</color>
+	<color name="survey_light_grey">#F1F1F1</color>
+	<color name="title_back_blue">#2c74bb</color>
+	<color name="list_item_back_white">#ffffff</color>
+	<color name="task_page_back">#efefef</color>
+	<color name="list_divider_back">#e6e6e6</color>
+	<color name="list_base_name_back">#333333</color>
+	<color name="list_base_distance_back">#2b71b9</color>
+	<color name="list_group_name_back">#939393</color>
+	<color name="tab_task_mode_back">#263183</color>
+	<color name="map_mode_font">#666666</color>
+	<color name="map_mode_hint">#2b71b9</color>
+	<color name="survey_basic_base">#939393</color>
+	<color name="survey_basic_info_get">#e6effd</color>
+	<color name="survey_basic_info_get_unit">#94c9fe</color>
+	<color name="survey_basic_info_get_height">#c4e1fc</color>
+	<color name="survey_basic_info_get_divider">#e5f0fd</color>
+	<color name="his_basic_info_tab">#2766a6</color>
+	<color name="me_back">#c5e0fd</color>
+	<color name="dialog_net_divider">#e0e0e0</color>
+	<color name="menu_slide_down_back">#848484</color>
+	<color name="station_title">#4aadf9</color>
+	<color name="station_info_odd">#a8edfe</color>
+	<color name="station_info_even">#80c5fa</color>
+	<color name="satation_bg">#e1dede</color>
+	<color name="back_gray">#ccc</color>
+	<color name="mask">#86222222</color>
+	<!-- 工参详情页面颜色 -->
+	<color name="station_start">#6A6EEB</color>
+	<color name="station_center">#5871E5</color>
+	<color name="station_end">#4274DF</color>
+	<color name="station_divider_color">#E8E6E6</color>
+	<color name="station_main_bg">#E1DEDE</color>
+	<color name="backgroud_color">#4D5D74</color>
+	<color name="change_edit">#666666</color>
+	<color name="black_55">#000000</color>
+</resources>
