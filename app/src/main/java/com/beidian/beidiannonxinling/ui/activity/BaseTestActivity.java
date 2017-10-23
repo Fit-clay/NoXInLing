@@ -83,7 +83,7 @@ public class BaseTestActivity extends BaseActivity implements View.OnClickListen
     private LinearLayout ll_back;
     private TextView tv_title;
     private TextView tv_siteName;//基站名称
-    private TextView tv_cellCount;//扇区数
+    protected TextView tv_cellCount;//扇区数
     protected CustomExpandableListView expandableListView;
     private CustomListView listView;//测试结果
     private EditText et_leaveProblem;//遗留问题
@@ -213,7 +213,7 @@ public class BaseTestActivity extends BaseActivity implements View.OnClickListen
      * @param workOrder                工单号
      * @param stationName              基站名
      */
-    private void handleNetResult(String s, String jsonFileAbsolutePathName, String workOrder) {
+    protected void handleNetResult(String s, String jsonFileAbsolutePathName, String workOrder) {
         if (TextUtils.isEmpty(s))
             return;
         Gson gson = new Gson();

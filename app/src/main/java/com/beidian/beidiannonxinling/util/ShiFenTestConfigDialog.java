@@ -22,6 +22,7 @@ import com.beidian.beidiannonxinling.bean.BaseInfoTestBean;
 import com.beidian.beidiannonxinling.bean.ChangeTestModelBean;
 import com.beidian.beidiannonxinling.bean.ShiFenBBU_RRUBean;
 import com.beidian.beidiannonxinling.bean.TestModelBean;
+import com.beidian.beidiannonxinling.bean.TestTask;
 import com.beidian.beidiannonxinling.common.Const;
 import com.beidian.beidiannonxinling.net.ResultCallback;
 import com.beidian.beidiannonxinling.ui.widget.MultiSpinner;
@@ -29,10 +30,14 @@ import com.google.gson.Gson;
 import com.lzy.okgo.OkGo;
 import com.lzy.okgo.model.HttpParams;
 
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 import okhttp3.Call;
 import okhttp3.Response;
+
+import static com.beidian.beidiannonxinling.R.id.sp_test_model;
 
 /**
  * Created by Eric on 2017/9/25.
@@ -45,6 +50,7 @@ public class ShiFenTestConfigDialog extends Dialog {
     private EditText edtLat,edtLng,edtBuildAddress,edtReferenceHight,edtRru,edtRemark;
     private MultiSpinner spChange;
     private TestModelBean   testModelBean;
+
     public interface ChangeTestModel{
         void getChangeModel(ChangeTestModelBean bean);
     }
@@ -68,7 +74,7 @@ public class ShiFenTestConfigDialog extends Dialog {
         spUnitInfo= (Spinner) findViewById(R.id.sp_unit_info);
         spFloor= (Spinner) findViewById(R.id.sp_floor_info);
         spTestWay= (Spinner) findViewById(R.id.sp_test_way);
-        spTestModel= (Spinner) findViewById(R.id.sp_test_model);
+        spTestModel= (Spinner) findViewById(sp_test_model);
         tv_cancel= (TextView) findViewById(R.id.tv_cancel);
         tv_confirm= (TextView) findViewById(R.id.tv_confirm);
         edtLat= (EditText) findViewById(R.id.edt_lat);
@@ -208,9 +214,9 @@ private int index;
                 modelBean.setFloorInfo(spFloor.getSelectedItem().toString());
                 modelBean.setReferenceHeight(edtReferenceHight.getText().toString());
                 modelBean.setTestWay(spTestWay.getSelectedItem().toString());
-                if(spTestModel.getSelectedItem()!=null){
+//                if(spTestModel.getSelectedItem()!=null){
                     modelBean.setTestModel(spTestModel.getSelectedItem().toString());
-                }
+//                }
                 modelBean.setTestChange(spChange.getCheckedOptions());
                 modelBean.setRru(baseInfoTestBean.getSiteInfo().getCellinfoList().get(index).getRrulist().get(sp_rru.getSelectedItemPosition()));
                 modelBean.setRemark(edtRemark.getText().toString());
@@ -227,6 +233,41 @@ private int index;
                     spChange.setTitle("测试项选择");
                     spChange.setDataList(testModelBean.getTemplate().get(position).getTaskList());
                     spChange.setSelectCount(testModelBean.getTemplate().get(position).getTaskList().size());
+
+                     spChange.setCheckedSet(null);
+                if(changeTestModelBean != null){
+                    if (changeTestModelBean.getTestModel()!=null) {
+//                    if (modelFlag) {
+                        //查看或重测时填充默认数据 只走一次
+                        for (int n = 0; n < testModelBean.getTemplate().size(); n++) {
+                            if (testModelBean.getTemplate().get(n).getTemplatename().equals(changeTestModelBean.getTestModel())) {
+                                spTestModel.setSelection(n);
+                            }
+                        }
+                        if (changeTestModelBean.getTestChange() != null && changeTestModelBean.getTestChange().size() > 0) {
+                            Set<Object> set = new HashSet<>();
+                            for (int i = 0; i < changeTestModelBean.getTestChange().size(); i++) {
+                                set.add(changeTestModelBean.getTestChange().get(i).getId());
+                            }
+                            spChange.setCheckedSet(set);
+                            StringBuffer sb = new StringBuffer();
+
+                            for (TestTask testTask : changeTestModelBean.getTestChange() ) {
+                                sb.append(testTask.getTesttype()).append(",");
+                            }
+                            if (sb.length() > 0) {
+                                sb.setLength(sb.length() - 1);
+                            }
+                            spChange.setText(sb.toString());
+
+
+                        }
+                    }
+
+
+                }
+
+
 
             }
 

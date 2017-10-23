@@ -134,8 +134,8 @@ public class LTEShiFenTestActivity extends BaseActivity implements View.OnClickL
     private   int mobileNum;
     private boolean mobileType;
 
-    private boolean beginTestType;
-
+    private boolean beginTestType;  //是否开始测试
+    private String defultBackgroundImagePath;
     @Override
     protected void initView() {
         setContentView(R.layout.activity_lte_shifen_test);
@@ -187,14 +187,6 @@ public class LTEShiFenTestActivity extends BaseActivity implements View.OnClickL
         };
 
     }
-    @Override
-    protected void onResume() {
-        // TODO Auto-generated method stub
-        super.onResume();
-
-    }
-
-
 
     @Override
     protected void initData() {
@@ -215,6 +207,7 @@ public class LTEShiFenTestActivity extends BaseActivity implements View.OnClickL
                 changeTestModelBean=bean.getChangeTestModelBean();
                 pointCanvasView.setBackgroundBitmap(BitmapFactory.decodeFile(fileInfoAddress.substring(0,fileInfoAddress.lastIndexOf("/"))+"/背景图片.jpeg"));
                 backgroundBitmapPath=fileInfoAddress.substring(0,fileInfoAddress.lastIndexOf("/"))+"/背景图片.jpeg";
+                defultBackgroundImagePath=backgroundBitmapPath;
                 tvContent.setVisibility(View.GONE);
             }
         }
@@ -453,8 +446,9 @@ public class LTEShiFenTestActivity extends BaseActivity implements View.OnClickL
             public void run() {
                 super.run();
                 ImageUtils.saveBitmapToSDCard(mContext,bit,fileDir+"/打点图片.jpeg");
-                FileUtils.copyFile(backgroundBitmapPath,fileDir+"/背景图片.jpeg");
-
+                if(!backgroundBitmapPath.equals(fileDir+"/背景图片.jpeg")){
+                    FileUtils.copyFile(backgroundBitmapPath,fileDir+"/背景图片.jpeg");
+                }
                 LETBean bean=new LETBean();
                 bean.setTestResults(pointCanvasView.getAllList());
                 bean.setChangeTestModelBean(changeTestModelBean);

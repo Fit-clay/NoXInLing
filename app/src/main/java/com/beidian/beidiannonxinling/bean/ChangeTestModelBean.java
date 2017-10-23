@@ -11,7 +11,7 @@ public class ChangeTestModelBean {
     private String lat,lng,address;
     private String unit,floorInfo,referenceHeight;
     private String TestWay;
-    private String TestModel;
+    private String testModel;
     private List<TestTask> testChange;
     private ShiFenBBU_RRUBean rru;
     private String remark;
@@ -90,11 +90,11 @@ public class ChangeTestModelBean {
     }
 
     public String getTestModel() {
-        return TestModel;
+        return testModel;
     }
 
     public void setTestModel(String testModel) {
-        TestModel = testModel;
+        this.testModel = testModel;
     }
 
     public List<TestTask> getTestChange() {

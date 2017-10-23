@@ -49,26 +49,33 @@
         android:layout_height="30dp"
         android:orientation="horizontal"
         android:gravity="center"
-        android:background="@color/blue1"
         >
 
         <RadioButton
             android:id="@+id/rg_base"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:button="@null"
             android:gravity="center"
-            android:text="基础信息" />
+            android:text="基础信息"
+            android:background="@drawable/selector_switch_radiobutton"
+            android:textColor="@color/selector_switch_radiobutton"
+            android:checked="true"
+
+            />
 
         <RadioButton
             android:id="@+id/rg_construction"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:button="@null"
             android:gravity="center"
-            android:text="施工核查" />
+            android:text="施工核查"
+            android:background="@drawable/selector_switch_radiobutton"
+            android:textColor="@color/selector_switch_radiobutton"
+            />
     </RadioGroup>
 
     <FrameLayout

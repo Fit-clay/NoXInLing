@@ -1,8 +1,11 @@
 package com.beidian.beidiannonxinling.ui.activity;
 
 import com.beidian.beidiannonxinling.adapter.HongZhanTestExpandableListViewAdapter;
+import com.beidian.beidiannonxinling.bean.BaseInfoTestBean;
 import com.beidian.beidiannonxinling.bean.BaseTestBean;
+import com.beidian.beidiannonxinling.bean.CellinfoListBean;
 import com.beidian.beidiannonxinling.common.Const;
+import com.google.gson.Gson;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,6 +18,7 @@ public class ShiFenTestActivity extends BaseTestActivity {
 
     @Override
     protected void initExpandableListView(String jsonFileAbsolutePathName, String workOrder) {
+//        tv_cellCount.setText();
         BaseTestBean.ParentListBean parentBean1 = new BaseTestBean.ParentListBean();
         BaseTestBean.ParentListBean parentBean2 = new BaseTestBean.ParentListBean();
         BaseTestBean.ParentListBean parentBean3 = new BaseTestBean.ParentListBean();
@@ -68,4 +72,13 @@ public class ShiFenTestActivity extends BaseTestActivity {
 
     }
 
+    @Override
+    protected void handleNetResult(String s, String jsonFileAbsolutePathName, String workOrder) {
+        super.handleNetResult(s, jsonFileAbsolutePathName, workOrder);
+        Gson gson = new Gson();
+        BaseInfoTestBean bean = gson.fromJson(s, BaseInfoTestBean.class);
+        BaseInfoTestBean.SiteInfoBean siteInfo = bean.getSiteInfo();
+        List<CellinfoListBean> cellinfoList = siteInfo.getCellinfoList();
+        tv_cellCount.setText("" + (cellinfoList == null ? "" : (cellinfoList.size())));
+    }
 }

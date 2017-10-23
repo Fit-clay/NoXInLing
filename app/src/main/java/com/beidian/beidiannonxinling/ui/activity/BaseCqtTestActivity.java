@@ -539,24 +539,29 @@ public class BaseCqtTestActivity extends BaseActivity implements View.OnClickLis
                         FileUtils.saveFile(mContext, upJson.toString()+"\n",upPath,true);
                     }else {
                         List<String> mList = FileUtils.readFileOnLine(upPath);
-                        for(int i=0;i<mList.size();i++){
-                            try {
-                                JSONObject jsonObject=new JSONObject(mList.get(i));
-                                if(jsonObject.get("testName").equals(new File(contentPath).getName())){
-                                    mList.remove(i);
-                                    break;
+                        if(mList!=null){
+                            for(int i=0;i<mList.size();i++){
+                                try {
+                                    JSONObject jsonObject=new JSONObject(mList.get(i));
+                                    if(jsonObject.get("testName").equals(new File(contentPath).getName())){
+                                        mList.remove(i);
+                                        break;
+                                    }
+                                } catch (JSONException e) {
+                                    e.printStackTrace();
                                 }
-                            } catch (JSONException e) {
-                                e.printStackTrace();
                             }
                         }
                         upLoadCqtBean.setTestName(new File(contentPath).getName());
                         JSON upJson = (JSON) JSON.toJSON(upLoadCqtBean);
                         new File(upPath).delete();
                         FileUtils.saveFile(mContext, upJson.toString()+"\n",upPath,true);
-                        for(String item:mList){
-                            FileUtils.saveFile(mContext, item+"\n",upPath,true);
+                        if(mList!=null){
+                            for(String item:mList){
+                                FileUtils.saveFile(mContext, item+"\n",upPath,true);
+                            }
                         }
+
 
                     }
 

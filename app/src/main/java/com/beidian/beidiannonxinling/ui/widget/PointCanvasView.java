@@ -98,9 +98,6 @@ public class PointCanvasView  extends ImageView{
             setPlistInfo(lastBean, bean);
             arrayLineList.add(pList);
             pList=new ArrayList<>();
-//            for(int c=0;c<10;c++){
-//                pList.add(new PointBean());
-//            }
             index++;
         }
         invalidate();//更新绘制
@@ -179,10 +176,6 @@ public class PointCanvasView  extends ImageView{
     public Bitmap getBackgroundimage() {
         return backgroundBitmap;
     }
-
-  /*  public void setAllList(List<PointBean> allList) {
-        this.allList = allList;
-    }*/
 
     public void setArrayLineList(List<List<TestResult>> arrayLineList) {
         this.arrayLineList = arrayLineList;
